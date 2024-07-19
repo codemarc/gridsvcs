@@ -1,0 +1,25 @@
+version: '3'
+# https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml
+
+services:
+  motd:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - GS_PORT=3000
+      - GS_DATA=data.json
+    volumes:
+      - ./public:/node/public
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "node", "service": "cpmd"}]'
+    ports:
+       - "8080:8080"
+       - "8126:8126/tcp"
+       - "8125:8125/udp"
+

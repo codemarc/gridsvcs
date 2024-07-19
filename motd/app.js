@@ -1,12 +1,12 @@
-const express = require("express")
-const bodyParser = require("body-parser")
-const cors = require("cors")
-const fs = require("fs-extra")
-const path = require("path")
+import express from "express"
+import bodyParser from "body-parser"
+import cors from "cors"
+import fs from "fs-extra"
+import path  from "path"
 
 const app = express()
-const PORT = process.env.GSPORT ?? 3000
-const DATA_FILE = path.join(__dirname, process.env.GSDATA ?? "data.json")
+const PORT = process.env.GS_PORT ?? 3000
+const DATA_FILE = path.join(process.cwd(), process.env.GS_DATA ?? "data/data.json")
 
 app.use(bodyParser.json())
 app.use(cors())
