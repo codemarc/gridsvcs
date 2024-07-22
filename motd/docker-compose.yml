@@ -1,0 +1,15 @@
+services:
+  motd:
+    image: ghcr.io/codemarc/gridsvcs/motd:0.0.2
+    restart: unless-stopped
+    build:
+      context: .
+      tags:
+        - ghcr.io/codemarc/gridsvcs/motd:latest
+    environment:
+      - GSDATA=data
+    volumes:
+      - ./data:/gridsvcs/motd/data
+    ports:
+       - 3000:3000
+
