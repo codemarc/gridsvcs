@@ -4,6 +4,9 @@
    "version": "1.0.0",
    "main": "src/app.js",
    "type": "module",
+   "bin": {
+      "motd": "./motd.js"
+   },
    "scripts": {
       "dev": "nodemon ./motd.js server",
       "server": "node ./motd.js server",

@@ -46,8 +46,11 @@ export default class qqs {
             return `${ageInDays} days, ${ageInHours % 24} hours, ${ageInMinutes % 60} minutes, and ${ageInSeconds % 60} seconds.`
          }
 
+         const jsondata = fs.readJSONSync(DATA_DIR + "/quotes.json");
+
          return {
-            status: 200,
+            model: jsondata.model,
+            usage: jsondata.usage,
             cache: await age(DATA_DIR+'/data.json'),
             genai: await age(DATA_DIR+'/quotes.json')
          }

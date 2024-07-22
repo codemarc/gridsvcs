@@ -7,10 +7,9 @@ services:
       tags:
         - ghcr.io/codemarc/gridsvcs/motd:latest
     environment:
-      - GS_PORT=3000
-      - GS_DATA=data/data.json
+      - GSDATA=data
     volumes:
       - ./data:/gridsvcs/motd/data
     ports:
-       - "9201:3000"
+       - 3000:3000
 
