@@ -9,4 +9,4 @@ RUN chown -R node /gridsvcs/motd
 RUN yarn global add node-gyp && yarn
 
 USER node
-CMD ["node", "app.js"]
+CMD ["node", "src/app.js"]

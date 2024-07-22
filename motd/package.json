@@ -1,16 +1,24 @@
 {
    "name": "motd",
+   "description": "Message of the Day service for gridlinks",
    "version": "1.0.0",
-   "main": "app.js",
+   "main": "src/app.js",
    "type": "module",
    "scripts": {
-      "start": "node app.js"
+      "dev": "nodemon ./motd.js server",
+      "server": "node ./motd.js server",
+      "motd": "node ./motd.js "
    },
    "license": "MIT",
    "dependencies": {
       "body-parser": "^1.20.2",
+      "caporal": "^1.4.0",
       "cors": "^2.8.5",
       "express": "^4.19.2",
-      "fs-extra": "^11.2.0"
+      "fs-extra": "^11.2.0",
+      "openai": "^4.52.7"
+   },
+   "devDependencies": {
+      "nodemon": "^3.1.4"
    }
 }
