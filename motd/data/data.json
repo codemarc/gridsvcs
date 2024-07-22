@@ -1,95 +1,27 @@
 [
    {
-      "message": "Believe you can and you're halfway there.",
-      "author": "Theodore Roosevelt"
-   },
-   {
       "message": "The only way to do great work is to love what you do.",
       "author": "Steve Jobs"
    },
    {
-      "message": "Success is not the key to happiness. Happiness is the key to success.",
-      "author": "Albert Schweitzer"
-   },
-   {
-      "message": "You miss 100% of the shots you don't take.",
-      "author": "Wayne Gretzky"
-   },
-   {
-      "message": "The future belongs to those who believe in the beauty of their dreams.",
-      "author": "Eleanor Roosevelt"
-   },
-   {
-      "message": "Act as if what you do makes a difference. It does.",
-      "author": "William James"
-   },
-   {
-      "message": "You are never too old to set another goal or to dream a new dream.",
-      "author": "C.S. Lewis"
-   },
-   {
-      "message": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
-      "author": "Ralph Waldo Emerson"
-   },
-   {
-      "message": "The best way to predict the future is to create it.",
-      "author": "Peter Drucker"
-   },
-   {
-      "message": "Change your thoughts and you change your world.",
-      "author": "Norman Vincent Peale"
-   },
-   {
-      "message": "Don't watch the clock; do what it does. Keep going.",
-      "author": "Sam Levenson"
-   },
-   {
-      "message": "Success usually comes to those who are too busy to be looking for it.",
-      "author": "Henry David Thoreau"
-   },
-   {
-      "message": "The only limit to our realization of tomorrow will be our doubts of today.",
-      "author": "Franklin D. Roosevelt"
-   },
-   {
-      "message": "Do what you can with all you have, wherever you are.",
-      "author": "Theodore Roosevelt"
-   },
-   {
-      "message": "Motivation is what gets you started. Habit is what keeps you going.",
-      "author": "Jim Ryun"
-   },
-   {
-      "message": "The only impossible journey is the one you never begin.",
-      "author": "Tony Robbins"
-   },
-   {
-      "message": "Everything you can imagine is real.",
-      "author": "Pablo Picasso"
-   },
-   {
-      "message": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
-      "author": "Zig Ziglar"
+      "message": "The future depends on what you do today.",
+      "author": "Mahatma Gandhi"
    },
    {
       "message": "In the middle of every difficulty lies opportunity.",
       "author": "Albert Einstein"
    },
    {
-      "message": "Opportunities don't happen. You create them.",
-      "author": "Chris Grosser"
+      "message": "Your limitation—it's only your imagination.",
+      "author": "Unknown"
    },
    {
-      "message": "It is never too late to be what you might have been.",
-      "author": "George Eliot"
+      "message": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt"
    },
    {
-      "message": "The secret of getting ahead is getting started.",
-      "author": "Mark Twain"
-   },
-   {
-      "message": "I find that the harder I work, the more luck I seem to have.",
-      "author": "Thomas Jefferson"
+      "message": "Act as if what you do makes a difference. It does.",
+      "author": "William James"
    },
    {
       "message": "Success is not how high you have climbed, but how you make a positive difference to the world.",
@@ -100,115 +32,171 @@
       "author": "Norman Vaughan"
    },
    {
-      "message": "You can’t use up creativity. The more you use, the more you have.",
-      "author": "Maya Angelou"
+      "message": "You are never too old to set another goal or to dream a new dream.",
+      "author": "C.S. Lewis"
    },
    {
-      "message": "The way to get started is to quit talking and begin doing.",
-      "author": "Walt Disney"
+      "message": "The best time to plant a tree was twenty years ago. The second best time is now.",
+      "author": "Chinese Proverb"
    },
    {
-      "message": "If you're going through hell, keep going.",
-      "author": "Winston Churchill"
+      "message": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+      "author": "Zig Ziglar"
    },
    {
-      "message": "Limit your 'always' and your 'nevers'.",
-      "author": "Amy Poehler"
+      "message": "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+      "author": "Joshua J. Marine"
    },
    {
-      "message": "Success is not the result of spontaneous combustion. You must set yourself on fire.",
-      "author": "Arnold H. Glasow"
+      "message": "Success usually comes to those who are too busy to be looking for it.",
+      "author": "Henry David Thoreau"
    },
    {
-      "message": "It does not matter how slowly you go, as long as you do not stop.",
-      "author": "Confucius"
+      "message": "Don't watch the clock; do what it does. Keep going.",
+      "author": "Sam Levenson"
    },
    {
-      "message": "Everything has beauty, but not everyone sees it.",
-      "author": "Confucius"
-   },
-   {
-      "message": "You can't fall if you don't climb. But there's no joy in living your whole life on the ground.",
-      "author": "Unknown"
+      "message": "Hardships often prepare ordinary people for an extraordinary destiny.",
+      "author": "C.S. Lewis"
    },
    {
       "message": "Keep your face always toward the sunshine—and shadows will fall behind you.",
       "author": "Walt Whitman"
    },
    {
-      "message": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+      "message": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney"
+   },
+   {
+      "message": "Limit your 'always' and your 'nevers'.",
+      "author": "Amy Poehler"
+   },
+   {
+      "message": "You miss 100% of the shots you don't take.",
+      "author": "Wayne Gretzky"
+   },
+   {
+      "message": "It's not whether you get knocked down, it's whether you get up.",
+      "author": "Vince Lombardi"
+   },
+   {
+      "message": "The mind is everything. What you think you become.",
+      "author": "Buddha"
+   },
+   {
+      "message": "Success is not the key to happiness. Happiness is the key to success.",
+      "author": "Albert Schweitzer"
+   },
+   {
+      "message": "Opportunities don't happen, you create them.",
+      "author": "Chris Grosser"
+   },
+   {
+      "message": "Everything you’ve ever wanted is on the other side of fear.",
+      "author": "George Addair"
+   },
+   {
+      "message": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
       "author": "Ralph Waldo Emerson"
-   },
-   {
-      "message": "Limitations live only in our minds. But if we use our imaginations, our possibilities become limitless.",
-      "author": "Jamie Paolinetti"
-   },
-   {
-      "message": "Too many of us are not living our dreams because we are living our fears.",
-      "author": "Les Brown"
-   },
-   {
-      "message": "Your time is limited, so don’t waste it living someone else’s life.",
-      "author": "Steve Jobs"
-   },
-   {
-      "message": "If you want to lift yourself up, lift up someone else.",
-      "author": "Booker T. Washington"
-   },
-   {
-      "message": "Keep going. Everything you need will come to you at the perfect time.",
-      "author": "Unknown"
-   },
-   {
-      "message": "Dream it. Wish it. Do it.",
-      "author": "Unknown"
-   },
-   {
-      "message": "Turn your wounds into wisdom.",
-      "author": "Oprah Winfrey"
    },
    {
       "message": "Life is 10% what happens to us and 90% how we react to it.",
       "author": "Charles R. Swindoll"
    },
    {
-      "message": "Keep your eyes on the stars, and your feet on the ground.",
-      "author": "Theodore Roosevelt"
-   },
-   {
-      "message": "Sometimes you will never know the value of a moment until it becomes a memory.",
-      "author": "Dr. Seuss"
-   },
-   {
-      "message": "We may encounter many defeats but we must not be defeated.",
-      "author": "Maya Angelou"
-   },
-   {
-      "message": "To live is the rarest thing in the world. Most people exist, that is all.",
-      "author": "Oscar Wilde"
-   },
-   {
       "message": "Success is walking from failure to failure with no loss of enthusiasm.",
+      "author": "Winston S. Churchill"
+   },
+   {
+      "message": "The biggest adventure you can take is to live the life of your dreams.",
+      "author": "Oprah Winfrey"
+   },
+   {
+      "message": "You have within you right now, everything you need to deal with whatever the world can throw at you.",
+      "author": "Brian Tracy"
+   },
+   {
+      "message": "Hard work beats talent when talent doesn't work hard.",
+      "author": "Tim Notke"
+   },
+   {
+      "message": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+      "author": "Roy T. Bennett"
+   },
+   {
+      "message": "Success is not final; failure is not fatal: It is the courage to continue that counts.",
       "author": "Winston Churchill"
    },
    {
-      "message": "Today’s accomplishments were yesterday’s impossibilities.",
-      "author": "Robert H. Schuller"
+      "message": "If you're going through hell, keep going.",
+      "author": "Winston Churchill"
    },
    {
-      "message": "Happiness is not something ready-made. It comes from your own actions.",
-      "author": "Dalai Lama"
+      "message": "Doubt kills more dreams than failure ever will.",
+      "author": "Suzy Kassem"
    },
    {
-      "message": "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
-      "author": "Jordan Belfort"
+      "message": "The only limit to our realization of tomorrow is our doubts of today.",
+      "author": "Franklin D. Roosevelt"
    },
    {
-      "message": "Don't count the days, make the days count.",
-      "author": "Muhammad Ali"
+      "message": "Everything you need is already inside you.",
+      "author": "Unknown"
    },
    {
-      "message": "You are braver than you believe, stronger than you seem, and smarter than you think.",
-      "author": "A.A. Milne"
+      "message": "Start where you are. Use what you have. Do what you can.",
+      "author": "Arthur Ashe"
+   },
+   {
+      "message": "The harder you work for something, the greater you’ll feel when you achieve it.",
+      "author": "Unknown"
+   },
+   {
+      "message": "Don’t limit your challenges. Challenge your limits.",
+      "author": "Unknown"
+   },
+   {
+      "message": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+      "author": "Christian D. Larson"
+   },
+   {
+      "message": "What we fear doing most is usually what we most need to do.",
+      "author": "Tim Ferriss"
+   },
+   {
+      "message": "Success is how high you bounce when you hit bottom.",
+      "author": "George S. Patton"
+   },
+   {
+      "message": "The best revenge is massive success.",
+      "author": "Frank Sinatra"
+   },
+   {
+      "message": "Hang on to your dreams, for if dreams die, life is a broken-winged bird that cannot fly.",
+      "author": "Langston Hughes"
+   },
+   {
+      "message": "Success is not in what you have, but who you are.",
+      "author": "Bo Bennett"
+   },
+   {
+      "message": "You can't use up creativity. The more you use, the more you have.",
+      "author": "Maya Angelou"
+   },
+   {
+      "message": "Perseverance is not a long race; it is many short races one after the other.",
+      "author": "Walter Elliot"
+   },
+   {
+      "message": "Your time is limited, so don’t waste it living someone else’s life.",
+      "author": "Steve Jobs"
+   },
+   {
+      "message": "If you can dream it, you can achieve it.",
+      "author": "Zig Ziglar"
+   },
+   {
+      "message": "The only person you are destined to become is the person you decide to be.",
+      "author": "Ralph Waldo Emerson"
    }
 ]
