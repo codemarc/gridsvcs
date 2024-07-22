@@ -1,6 +1,6 @@
 services:
   motd:
-    image: ghcr.io/codemarc/gridsvcs/motd:0.0.1
+    image: ghcr.io/codemarc/gridsvcs/motd:0.0.2
     restart: unless-stopped
     build:
       context: .
