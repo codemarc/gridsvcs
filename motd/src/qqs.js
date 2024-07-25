@@ -1,9 +1,24 @@
 import fs from "fs-extra"
+import logger from "./logger.js";
 import path from "path"
+
 const DATA_DIR = path.join(process.cwd(), process.env.GSDATA ?? "data")
 
 // Query Service
 export default class qqs {
+   constructor() {
+      this.init()
+   }
+
+   async init() {
+      try {
+         logger.info(`data directory set to ${DATA_DIR}`)
+         await fs.ensureDir(DATA_DIR)
+         await fs.ensureFile(DATA_DIR + "/data.json")
+      } catch (error) {
+         logger.error(error.toString())
+      }
+   }
 
    async getAllQuotes() {
       try {

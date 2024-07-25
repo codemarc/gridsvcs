@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import prog from "caporal"
+import logger from "./src/logger.js"
 import cqs from "./src/cqs.js"
 import { server } from "./src/app.js"
 import packageJson from "./package.json" assert { type: "json" }
@@ -19,20 +20,25 @@ try {
       .option("-f, --force", "force a cache update", false)
       .action(async (args, options) => {
          try {
-            let cq = new cqs();
-            cq.refreshQuotes(options.force);
+            let cq = new cqs()
+            logger.info(`refreshing quotes ${options.force? "forced" : ""}`)
+            cq.refreshQuotes(options.force)
+            logger.info(`refreshing quotes completes`);
          } catch (e) {
-            throw e;
+            throw e
          }
       })
 
       // =====================================================================
       .command("server", "start the service")
       .action(async (args, options) => {
-         server();
-      });
+         logger.info("starting server")
+         server()
+      })
 
-   if (process.argv.length < 3) process.argv.push("server")
+   logger.info(`running ${name} cli v${version}`)
+   if (process.argv.length < 3) logger.info("no command issued")
+
    prog.parse(process.argv)
 } catch (err) {
    console.error(err)
