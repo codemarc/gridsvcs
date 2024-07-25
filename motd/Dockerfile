@@ -1,12 +1,13 @@
 FROM node:lts-alpine
 LABEL org.opencontainers.image.source https://github.com/codemarc/gridsvcs
 
-WORKDIR /gridsvcs/motd
+RUN apk add --no-cache tzdata
 
+WORKDIR /gridsvcs/motd
 COPY ./ .
 
 RUN chown -R node /gridsvcs/motd
 RUN yarn global add node-gyp && yarn
 
 USER node
-CMD ["node", "./motd.js server"]
+CMD ["node", "./motd.js", "server"]

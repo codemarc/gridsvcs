@@ -1,6 +1,6 @@
 services:
-  motd:
-    image: ghcr.io/codemarc/gridsvcs/motd:0.0.2
+  cli:
+    image: ghcr.io/codemarc/gridsvcs/motd:0.0.3
     restart: unless-stopped
     build:
       context: .
@@ -9,7 +9,9 @@ services:
     environment:
       - GSDATA=data
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - ./data:/gridsvcs/motd/data
+      - ./logs:/gridsvcs/motd/logs
     ports:
        - 3000:3000
 
