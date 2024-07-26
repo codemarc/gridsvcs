@@ -2,6 +2,7 @@ import express from "express"
 import bodyParser from "body-parser"
 import cors from "cors"
 import helmet from "helmet"
+import fs from "fs-extra"
 import qqs from "./qqs.js"
 import logger from "./logger.js"
 
@@ -25,6 +26,12 @@ export function server() {
       const result = (returnMeta) ? await qq.getQuotesMeta() : await qq.getAllQuotes()
       res.status(result.status).send(result.data)
    })
+
+   app.get("/v1/motd", async (req, res) => {
+      let svc=fs.readJSONSync("./build.num")
+      res.status(200).send(svc)
+   });
+
 
    // Stop the server
    app.get("/v1/motd/stop", async (req, res) => {

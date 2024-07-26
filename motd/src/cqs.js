@@ -2,7 +2,6 @@ import OpenAI from "openai"
 import fs from "fs-extra"
 import path from "path"
 import logger from "./logger.js"
-import { log } from "console"
 const DATA_DIR = path.join(process.cwd(), process.env.GSDATA ?? "data")
 const QUOTES_FILE = DATA_DIR + "/quotes.json"
 const DATA_FILE = DATA_DIR + "/data.json"

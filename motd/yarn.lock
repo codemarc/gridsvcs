@@ -181,6 +181,11 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
+build-number-generator@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/build-number-generator/-/build-number-generator-2.0.4.tgz#2882b20c6520b228b03f9717b4b03d627b5485ac"
+  integrity sha512-hkKFhopqgcEoFxXKke87V/MkJ0IcNY1Jnh38TioGoFbasXC6li4VKDdjQ3VcgoER0KuhKeRlyxZD1LVTlw5imQ==
+
 bytes@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.2.tgz#8b0beeb98605adf1b128fa4386403c009e0221a5"

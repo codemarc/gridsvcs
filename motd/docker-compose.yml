@@ -1,11 +1,9 @@
 services:
   cli:
-    image: ghcr.io/codemarc/gridsvcs/motd:0.0.3
+    image: ghcr.io/codemarc/gridsvcs/motd:latest
     restart: unless-stopped
     build:
       context: .
-      tags:
-        - ghcr.io/codemarc/gridsvcs/motd:latest
     environment:
       - GSDATA=data
     volumes:
