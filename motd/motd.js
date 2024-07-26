@@ -8,7 +8,10 @@ import { generate } from "build-number-generator"
 import packageJson from "./package.json" assert { type: "json" }
 const { name, version, description } = packageJson
 
+
 try {
+   let svc=fs.readJSONSync("build.num")
+
    // =======================================================================
    // cli processing
    // =======================================================================
@@ -20,9 +23,9 @@ try {
       // =====================================================================
       .command("update", "generate a build number")
       .action(async (args, options) => {
-         const bdata = { version: version, build: generate() }
-         fs.writeJSONSync("build.num", bdata, { spaces: 3 })
-         logger.info(`build number ${bdata.build}`)
+         svc = { version: version, build: generate() }
+         fs.writeJSONSync("build.num", svc, { spaces: 3 })
+         logger.info(`build number ${svc.build}`)
       })
 
       // =====================================================================
@@ -46,7 +49,7 @@ try {
          server()
       })
 
-   logger.info(`running ${name} cli v${version}`)
+   logger.info(`running ${name} cli v${version} build ${svc.build}`)
    if (process.argv.length < 3) logger.info("no command issued")
 
    prog.parse(process.argv)

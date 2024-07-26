@@ -28,7 +28,7 @@ export function server() {
    })
 
    app.get("/v1/motd", async (req, res) => {
-      let svc=fs.readJSONSync("./build.num")
+      let svc=fs.readJSONSync("build.num")
       res.status(200).send(svc)
    });
 
