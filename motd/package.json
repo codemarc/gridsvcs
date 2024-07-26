@@ -1,7 +1,7 @@
 {
    "name": "motd",
    "description": "Message of the Day service for gridlinks",
-   "version": "1.0.0",
+   "version": "0.0.4",
    "main": "src/app.js",
    "type": "module",
    "bin": {
@@ -15,6 +15,7 @@
    "license": "MIT",
    "dependencies": {
       "body-parser": "^1.20.2",
+      "build-number-generator": "^2.0.4",
       "caporal": "^1.4.0",
       "cors": "^2.8.5",
       "date-fns": "^3.6.0",
