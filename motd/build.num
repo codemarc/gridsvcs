@@ -1,4 +1,12 @@
 {
    "version": "0.0.3",
-   "build": "240725654"
+   "build": "240726287",
+   "model": "gpt-4o-mini-2024-07-18",
+   "usage": {
+      "prompt_tokens": 33,
+      "completion_tokens": 1436,
+      "total_tokens": 1469
+   },
+   "cache": "0 days, 15 hours, 13 minutes, and 51 seconds.",
+   "genai": "0 days, 16 hours, 2 minutes, and 23 seconds."
 }

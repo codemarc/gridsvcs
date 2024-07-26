@@ -21,16 +21,15 @@ export function server() {
 
    // Read all items using CQRS pattern
    app.get("/v1/motd/quotes", async (req, res) => {
-      const returnMeta = req.query.hasOwnProperty("meta")
-      logger.info(`GET /v1/motd/quotes ${returnMeta? "return meta" : ""}`)
-      const result = (returnMeta) ? await qq.getQuotesMeta() : await qq.getAllQuotes()
+      logger.info(`GET /v1/motd/quotes`)
+      const result = await qq.getAllQuotes()
       res.status(result.status).send(result.data)
    })
 
    app.get("/v1/motd", async (req, res) => {
       let svc=fs.readJSONSync("build.num")
       res.status(200).send(svc)
-   });
+   })
 
 
    // Stop the server
