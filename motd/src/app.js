@@ -43,8 +43,8 @@ export function server() {
    // Start the server
    app.listen(PORT, () => {
       logger.info(`server is running on http://localhost:${PORT}`)
+      logger.info(`try http://localhost:${PORT}/v1/motd`);
       logger.info(`try http://localhost:${PORT}/v1/motd/quotes`);
-      logger.info(`or  http://localhost:${PORT}/v1/motd/quotes?meta`);
       logger.info(`press CTRL+C to stop`);
    })
 }
