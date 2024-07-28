@@ -1,0 +1,14 @@
+{
+  "name": "gridsvcs-doc",
+  "description": "build and deploy the gridsvcs doc site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "yarn global add docsify-cli  && docsify init",
+    "doc": "docsify serve -p 3002 .",
+    "deploy": "node deploy.js"
+  },
+  "dependencies": {
+    "shelljs.exec": "^1.1.8"
+  }
+}

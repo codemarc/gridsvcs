@@ -1,0 +1,10 @@
+{
+   "name": "gridsvcs",
+   "description": "microservices for gridlinks",
+   "version": "1.0.0",
+   "private": true,
+   "scripts": {
+      "doc": "cd doc && yarn doc && cd ..",
+      "doc:deploy": "cd doc && yarn deploy && cd .."
+   }
+}
