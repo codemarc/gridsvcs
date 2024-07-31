@@ -1,7 +1,7 @@
 {
    "name": "motd",
-   "description": "Message of the Day service for gridlinks",
-   "version": "0.0.3",
+   "description": "Message of the Day service for Gridlinks",
+   "version": "0.0.4",
    "main": "src/app.js",
    "type": "module",
    "bin": {
@@ -25,6 +25,8 @@
       "fs-extra": "^11.2.0",
       "helmet": "^7.1.0",
       "openai": "^4.52.7",
+      "swagger-jsdoc": "^6.2.8",
+      "swagger-ui-express": "^5.0.1",
       "winston": "^3.13.1",
       "winston-daily-rotate-file": "^5.0.0"
    },
