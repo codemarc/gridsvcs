@@ -1,12 +1,13 @@
 {
-   "version": "0.0.3",
-   "build": "240726364",
+   "version": "0.0.5",
+   "build": "240802516",
    "model": "gpt-4o-mini-2024-07-18",
    "usage": {
       "prompt_tokens": 33,
       "completion_tokens": 1436,
       "total_tokens": 1469
    },
-   "cache": "0 days, 17 hours, 48 minutes, and 9 seconds.",
-   "genai": "0 days, 18 hours, 36 minutes, and 40 seconds."
+   "count": 52,
+   "cache": "0 days, 0 hours, 28 minutes, and 17 seconds.",
+   "genai": "7 days, 23 hours, 41 minutes, and 22 seconds."
 }

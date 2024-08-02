@@ -32,12 +32,41 @@ try {
 
       // =====================================================================
       .command("refresh", "updates all cached data")
+      .argument("[topic]", "topic to refresh", prog.STRING)
+      .option("-l, --list", "topics", false)
+      .option("-t, --topics", "refresh topics list", false)
       .option("-f, --force", "force a cache update", false)
       .action(async (args, options) => {
          try {
+            // TODO: implement topic list refresh
+            if(options.topics) {
+               logger.info(`topics list is not implemented yet`)
+               return
+            }
+
+            let qq = new qqs()
+            const topics = await qq.getTopics()
+
+            if(options.list) {
+               console.log(`\ntopics:`)
+               topics.data.forEach(element => {
+                  console.log(`\t${element.topic}`)
+               })
+               console.log(`\n`)
+               return
+            }
+
+            if(args.topic) {
+               if(topics.data.filter(x => x.topic == args.topic).length == 0) {
+                  logger.error(`topic ${args.topic} not found`)
+                  console.log(`\n`)
+                  return
+               }
+            }
+
             let cq = new cqs()
             logger.info(`refreshing quotes ${options.force ? "forced" : ""}`)
-            cq.refreshQuotes(options.force)
+            cq.refreshQuotes(options.force,args.topic)
             logger.info(`refreshing quotes completes`)
          } catch (e) {
             throw e

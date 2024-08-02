@@ -1,0 +1,18 @@
+[
+   {
+      "topic": "general",
+      "prompt": ""
+   },
+   {
+      "topic": "trump",
+      "prompt": "related to Donald Trump"
+   },
+   {
+      "topic": "politics",
+      "prompt":"related to American Politics"
+   },
+   {
+      "topic": "elon",
+      "prompt": "related to elon musk"
+   }
+]
