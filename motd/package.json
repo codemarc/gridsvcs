@@ -1,7 +1,7 @@
 {
    "name": "motd",
    "description": "Message of the Day service for Gridlinks",
-   "version": "0.0.4",
+   "version": "0.0.5",
    "main": "src/app.js",
    "type": "module",
    "bin": {
