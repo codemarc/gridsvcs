@@ -34,6 +34,11 @@
     call-me-maybe "^1.0.1"
     z-schema "^5.0.1"
 
+"@codemarc/smashdata@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@codemarc/smashdata/-/smashdata-1.0.0.tgz#6614afdb825d904f1839dfccfaf56f2efe3da4f4"
+  integrity sha512-G1M+uTJdh/02ums52675jjx9/g/F22qQ5lfc0TQVgMfXNIuR8alNlvskqRom/WCBuR1MWwcA8T1nIM1o00lotA==
+
 "@colors/colors@1.6.0", "@colors/colors@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.6.0.tgz#ec6cd237440700bc23ca23087f513c75508958b0"

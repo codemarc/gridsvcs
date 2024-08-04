@@ -13,6 +13,10 @@
    },
    {
       "topic": "elon",
-      "prompt": "related to elon musk"
+      "prompt": "related to Elon Musk"
+   },
+   {
+      "topic": "kamala",
+      "prompt": "related to Kamala Harris"
    }
 ]
