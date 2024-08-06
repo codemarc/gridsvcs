@@ -176,7 +176,7 @@ export function server() {
    // Start the server
    app.listen(PORT, () => {
       logger.info(`server is running on http://localhost:${PORT}`)
-      logger.info(`try http://localhost:${PORT}/v1/api-docs`)
+      logger.info(`try http://localhost:${PORT}/v1/motd/api-docs`)
       logger.info(`try http://localhost:${PORT}/v1/motd/status`)
       logger.info(`try http://localhost:${PORT}/v1/motd/quotes`)
       logger.info(`try http://localhost:${PORT}/v1/motd/topics`)

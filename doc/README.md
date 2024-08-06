@@ -1,7 +1,7 @@
 # Gridsvcs  ![GitHub last commit](https://img.shields.io/github/last-commit/codemarc/gridsvcs)
-<div  style="margin-top:-12px"><font size="2"><a href="https://codemarc.net/doc/gridlinks">microservices for gridlinks</a><br/></font></div>
+<div  style="margin-top:-12px"><font size="2"><a href="https://codemarc.net/doc/gridlinks">microservices for gridlinks</a><br/></font></div><br/>
 
-Documentation for this [project] is located in the [docs] folder and using [docsify] we created the [gridsvcs][docsite] docsite, deployed at [codemarc.net/doc/gridsvcs][docsite].
+
 
 In modern software development, monolithic applications, where all components are tightly coupled and deployed as a single unit, are increasingly being replaced by a more modular and scalable approach called microservices architecture. Microservices are small, independent services that work together to form a larger application.
 
@@ -16,7 +16,10 @@ By creating a set of microservices called "gridsvcs", the Gridlinks project aims
 
 ### Motd
 
-## Publish
+## Developer Workflow
+
+<img src="img/motd.png" width="50%" vspace="20">
+
 
 <!--
 ---
