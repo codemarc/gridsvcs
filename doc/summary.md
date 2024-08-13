@@ -1,3 +1,5 @@
 * [Services](/#Gridsvcs)
-  - [Motd](/#motd)
+  - [Auth](/auth)
+  - [Motd](/motd)
+  - [Profile](/profile)
 * [Publish](/#publish)

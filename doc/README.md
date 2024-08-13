@@ -14,7 +14,12 @@ By creating a set of microservices called "gridsvcs", the Gridlinks project aims
 
 ## Services
 
-### Motd
+* [Auth](/auth) - The auth service is responsible for user authentication and authorization. It provides endpoints for user registration, login, and token management.
+
+* [Motd](/motd) - The motd service is responsible for providing message of the day (MOTD) content to its users. It provides endpoints for retrieving the MOTD and updating it.
+
+* [Profile](/profile) - The profile service is responsible for managing user profiles. It provides endpoints for creating, updating, and retrieving user profiles.
+
 
 ## Developer Workflow
 
