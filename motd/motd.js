@@ -1,10 +1,10 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --no-warnings
 import prog from "caporal"
 import logger from "./src/logger.js"
 import fs from "fs-extra"
 import cqs from "./src/cqs.js"
 import qqs from "./src/qqs.js"
-import { server } from "./src/app.js"
+import { server } from "./src/server.js"
 import { generate } from "build-number-generator"
 import packageJson from "./package.json" assert { type: "json" }
 const { name, version, description } = packageJson

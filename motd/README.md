@@ -214,3 +214,16 @@ $ docker compose run cli motd
      --quiet            Quiet mode - only displays warn and error messages
      -v, --verbose      Verbose mode - will also output debug messages
 
+
+
+Politics
+
+To calculate the cost of 1652 tokens when 1 million tokens cost 5 dollars, you can use the following formula:
+
+ChatGPT 4o Cost = (Total Tokens / 1000000)* 5
+politics: (1652 tokens / 1000000) * 5 = 0.00826 dollars
+
+ChatGPT 4o Mini Cost = (Total Tokens / 1000000)* 0.15
+politics: (1279 tokens / 1000000) * 0.15 = 0.00019185 dollars
+
+By the way, for transparency, I start this project with a $10 budget and adter a month I am at $9.53 (so super low volume...)

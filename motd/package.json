@@ -1,16 +1,16 @@
 {
    "name": "motd",
    "description": "Message of the Day service for Gridlinks",
-   "version": "0.0.5",
-   "main": "src/app.js",
+   "version": "0.0.6",
+   "main": "src/server.js",
    "type": "module",
    "bin": {
       "motd": "./motd.js"
    },
    "scripts": {
       "dev": "nodemon ./motd.js server",
-      "server": "node ./motd.js server",
-      "motd": "node ./motd.js ",
+      "server": "node --no-warnings ./motd.js server",
+      "motd": "node --no-warnings ./motd.js ",
       "update": "yarn version --patch",
       "build": "node ./motd.js update"
    },

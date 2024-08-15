@@ -1,3 +1,4 @@
+#!/usr/bin/env node --no-warnings
 import express from "express"
 import bodyParser from "body-parser"
 import cors from "cors"
@@ -102,21 +103,64 @@ export function server() {
     *         schema:
     *           type: string
     *         description: Optional topic to filter quotes
+    *       - in: query
+    *         name: format
+    *         schema:
+    *           type: string
+    *           enum: [json, html, text]
+    *         description: Optional format of the response (json, html or text)*
     *     responses:
     *       200:
-    *        description: A list of quotes
-    *        content:
-    *          application/json:
-    *            schema:
-    *              $ref: '#/components/schemas/QuoteArray'
+    *         description: A list of quotes
+    *         content:
+    *           application/json:
+    *             schema:
+    *               $ref: '#/components/schemas/QuoteArray'
+    *           text/html:
+    *             schema:
+    *               type: string
+    *               example: "<p>The only way to do great work is to love what you do. - Steve Jobs</p>"
+    *           text/plain:
+    *             schema:
+    *               type: string
+    *               example: "The only way to do great work is to love what you do. - Steve Jobs"
     *       500:
     *         description: Internal server error
     */
    app.get("/v1/motd/quotes", async (req, res) => {
       logger.info(`GET /v1/motd/quotes`)
-      const { topic } = req.query
+      const { topic, format } = req.query
       const result =(topic)?await qq.getQuotesByTopic(topic):await qq.getAllQuotes()
-      res.status(result.status).send(result.data)
+      if (format === "html") {
+         res.setHeader("Content-Type", "text/html")
+         res.status(result.status).send(`
+            <html lang="en">
+            <head>
+            <title>Quotes ${topic??""}</title>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:400,500,600,700&amp;display=swap">
+            <style type="text/css">
+            body {
+            padding:20px;
+            font-family: 'Mukta', sans-serif;
+            font-size: 16px;
+            font-weight: 40;
+            }
+            </style>
+            </head>
+            <body>
+            <h1>Quotes ${topic ?? ""}</h1>
+            <ol>
+            ${result.data.map(quote => `<li>${quote.message} - ${quote.author}</li>`).join("")}
+            </ol>
+            </body>
+            </html>`)
+      } else if (format === "text") {
+         res.setHeader("Content-Type", "text/plain")
+         res.status(result.status).send(`  Quotes ${ topic ?? ""}\n\n${result.data.map((quote,ndx) => `  ${ndx+1}. ${quote.message} - ${quote.author}`).join("\n\n")}`)
+      } else {
+         res.setHeader("Content-Type", "application/json")
+         res.status(result.status).send(result)
+      }
    })
 
 

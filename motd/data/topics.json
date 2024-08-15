@@ -4,12 +4,20 @@
       "prompt": ""
    },
    {
+      "topic": "got",
+      "prompt": "by characters from game of thrones or from house of the dragon"
+   },
+   {
       "topic": "trump",
-      "prompt": "related to Donald Trump"
+      "prompt": "related to Donald Trump "
    },
    {
       "topic": "politics",
-      "prompt":"related to American Politics"
+      "prompt": "related to American Politics from the past month"
+   },
+   {
+      "topic": "politics-mini",
+      "prompt": "related to American Politics from the past month"
    },
    {
       "topic": "elon",
