@@ -1,0 +1,86 @@
+name: fintech
+title: financial news / data
+href2: "*/settings"
+links:
+  - pre1: ㅤ
+    name1: yahoo
+    href1: https://finance.yahoo.com
+    title1: Market data, news, and more.
+
+    pre2: ㅤ
+    name2: google
+    href2: https://www.google.com/finance
+    title2: Aggregates financial news and market data from multiple sources.
+
+    pre3:  
+    name3: seeking alpha
+    href3: https://seekingalpha.com
+    title3: Crowd-sourced financial content service. In-depth analysis and market commentary.
+
+
+  - pre1: ㅤ
+    name1: bloomberg
+    href1: https://www.bloomberg.com
+    title1: Extensive financial news, data, and analysis.Comprehensive financial coverage.
+
+    pre2: ㅤ
+    name2: marketwatch
+    href2: https://www.marketwatch.com
+    title2:  Breaking news and stock market updates.
+
+    pre3:  
+    name3: wsj
+    href3: https://www.wsj.com
+    title3: Comprehensive financial news.
+
+  - pre1: ㅤ
+    name1: reuters
+    href1: https://www.reuters.com/finance
+    title1: Global financial coverage.
+
+    name2: investing.com
+    href2: https://www.investing.com
+    title2: Real-time financial data and tools.
+
+    name3: nasdaq
+    href3: https://nasdaq.com
+    title3: nasdaq market site
+
+  - pre1: ㅤ
+  - pre1: ㅤ
+
+  - name1: "-finviz"
+    href1: https://finviz.com/
+
+  - pre1:      
+    post1:       
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: schwab
+    href1: https://client.schwab.com/app/accounts/positions/#/
+
+    name2: fidelity
+    href2: https://digital.fidelity.com/prgw/digital/login/full-page
+
+    name3: robinhood
+    href3: https://robinhood.com/login/
+
+  - pre1:      
+    post1:       
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: yieldmax
+    href1: https://www.yieldmaxetfs.com/
+
+    name2: cnbc
+    href2: https://www.cnbc.com/live-tv/?trknav=navigation:shows:watchlive:103620081
+
+    name3: cnn mkts
+    href3: https://www.cnn.com/markets
+
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+

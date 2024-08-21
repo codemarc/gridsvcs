@@ -1,0 +1,89 @@
+{
+  "name": "genai",
+  "title": "genai / tools",
+  "href1": "p3",
+  "href2": "*/settings",
+  "links": [
+    {
+      "pre1": " ",
+      "name1": "chatgpt",
+      "href1": "https://chat.openai.com/",
+      "title1": "OpenAI's ChatGPT",
+      "name2": "claude",
+      "href2": "https://claude.ai/chats",
+      "title2": "Anthropic's Claude",
+      "name3": "gemini",
+      "href3": "https://gemini.google.com/",
+      "title3": "Google's Gemini",
+      "name4": "perplexity",
+      "href4": "https://www.perplexity.ai/",
+      "title4": "Perplexity AI Search"
+    },
+    {
+      "pre1": "  ",
+      "name1": "meta.ai",
+      "href1": "https://www.meta.ai/",
+      "title1": "Meta's AI Research",
+      "name3": "x.ai",
+      "href3": "https://x.ai/",
+      "title3": "x.ai",
+      "name2": "hugging face",
+      "href2": "https://huggingface.co/",
+      "title2": "Hugging Face AI Community"
+    },
+    {
+      "name1": "-art/image"
+    },
+    {
+      "pre1": " ",
+      "name1": "dall-e",
+      "href1": "https://openai.com/dall-e-2",
+      "title1": "OpenAI's DALL-E, generates highly realistic and creative images from text descriptions. Known for its versatility and ability to understand complex prompts. Offers editing features like inpainting and outpainting.",
+      "name2": "midjourney",
+      "href2": "https://www.midjourney.com/",
+      "title2": "Midjourney AI Art. Produces high-quality, artistic images from text prompts. Known for its distinctive aesthetic, often described as painterly or illustrative. Operates primarily through a Discord bot interface. Offers various style options and aspect ratios",
+      "name3": "stable diffusion",
+      "href3": "https://stability.ai/",
+      "title3": "Stability AI's Stable Diffusion, Open-source image generation model. Can run locally on consumer hardware, unlike many cloud-based alternatives. Highly customizable with a large community creating custom models and implementations. Capable of various tasks including text-to-image, image-to-image, and inpainting"
+    },
+    {
+      "pre1": "  ",
+      "name1": "runwayml",
+      "href1": "https://runwayml.com/",
+      "title1": "Runway AI Video Editor - Offers AI-powered video editing and generation. Known for text-to-video capabilities and advanced editing features",
+      "name2": "digital-id",
+      "href2": "https://www.d-id.com/creative-reality-studio/",
+      "title2": "Specializes in creating talking head videos from still images. Offers realistic lip-sync and facial animations",
+      "name3": "designer",
+      "href3": "https://designer.microsoft.com/",
+      "title3": "Microsoft"
+    },
+    {
+      "name1": "- coding  "
+    },
+    {
+      "pre1": " ",
+      "name1": "copilot",
+      "href1": "https://github.com/features/copilot",
+      "title1": "GitHub Copilot",
+      "name2": "codewhisperer",
+      "href2": "https://aws.amazon.com/codeguru/code-whisperer/",
+      "title2": "Amazon CodeWhisperer - integrated with AWS services",
+      "name3": "sourcegraph",
+      "href3": "https://sourcegraph.com/search"
+    },
+    {
+      "pre1": "~  lamatic   ",
+      "post1": "  ",
+      "post2": " ",
+      "post3": " ",
+      "name1": "docs",
+      "href1": "https://lamatic.ai/docs",
+      "name2": "studio",
+      "href2": "https://studio.lamatic.ai/"
+    },
+    {
+      "pre1": "ㅤ"
+    }
+  ]
+}

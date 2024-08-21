@@ -1,0 +1,9 @@
+{
+   "name": "gdata",
+   "description": "gridlink data tool chain",
+   "version": "0.0.1",
+   "private": true,
+   "devDependencies": {
+      "js-yaml": "^4.1.0"
+   }
+}

@@ -1,0 +1,80 @@
+name: devops
+title: devops toolchain
+href1: https://www.cncf.io/
+href2: "*/settings"
+links:
+  - pre1:  
+    name1: docker
+    href1: https://www.docker.com/
+    name2: kubernetes
+    href2: https://kubernetes.io/
+    name3: k3s
+    href3: https://k3s.io/
+    name4: helm
+    href4: https://helm.sh/
+
+  - pre1:  
+    name1: datadog
+    href1: https://www.datadoghq.com/
+    name2: prometheus
+    href2: https://prometheus.io/
+    name3: grafana
+    href3: https://grafana.com/
+    name4: elk
+    href4: https://www.elastic.co/elastic-stack
+
+  - name1: pulumi
+    href1: https://www.pulumi.com/
+    name2: serverless
+    href2: https://www.serverless.com/
+    name3: terraform
+    href3: https://www.terraform.io/
+    name4: ansible
+    href5: https://www.ansible.com/
+
+
+  - pre1:  ㅤㅤ
+    name1: istio
+    href1: https://istio.io/
+    name2: linkerd
+    href2: https://linkerd.io/
+    name3: consul
+    href3: https://www.consul.io/
+    name4: envoy
+    href4: https://www.envoyproxy.io/
+
+  - pre1:  ㅤ
+    name1: terraform
+    href1: https://www.terraform.io/
+    name2: ansible
+    href2: https://www.ansible.com/
+    name3: puppet
+    href3: https://puppet.com/
+    name4: chef
+    href4: https://www.chef.io/
+
+  - pre1:  ㅤ
+    name1: jenkins
+    href1: https://www.jenkins.io/
+    name2: gitLab ci
+    href2: https://docs.gitlab.com/ee/ci/
+    name3: circle ci
+    href3: https://circleci.com/
+    name4: travis ci
+    href4: https://travis-ci.org/
+
+  - pre1:  ㅤ
+    name1: rancher
+    href1: https://rancher.com/
+
+    name2: openshift
+    href2: https://www.openshift.com/
+    title2: Red Hat OpenShift is a container application platform that allows developers and IT organizations to build, deploy, and manage applications consistently across on-premises, public, and private cloud infrastructures. It is based on open-source Kubernetes container orchestration technology and provides a comprehensive set of tools and services for developing, deploying, and managing containerized applications.
+
+    name3: nomad
+    href3: https://www.nomadproject.io/
+    title3: A simple and flexible scheduler and orchestrator to deploy and manage containers and non-containerized applications across on-premises and clouds at scale.
+
+  - name1: ㅤ
+
+  - name1: ㅤ

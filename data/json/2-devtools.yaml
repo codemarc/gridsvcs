@@ -1,0 +1,73 @@
+name: devtools
+title: devtools
+href1: https://stackshare.io/tools
+href2: "*/settings"
+links:
+  - pre1:      
+    post1:  | 
+    post2:  | 
+    post3:  | 
+
+    name1: book
+    href1: https://book.git-scm.com/book/en/v2
+
+    name2: cheats
+    href2: https://gist.github.com/codemarc/7e3c37a880e679f8fa310f67cdb29a85
+
+    name3: gists
+    href3: https://gist.github.com/
+
+    name4: insider
+    href4: hrefhttps://resources.github.com/github-insider/practitioner/4
+
+  - pre1: ㅤㅤ
+    name1: tables
+    href1: https://tableconvert.com/
+
+    name2: mui
+    href2: https://mui.com/material-ui/all-components/
+
+    name3: jwt
+    href3: https://jwt.io/#algorithm-select
+
+    name4: unicode
+    href4: https://compart.com/en/unicode
+
+  - pre1: ㅤㅤ
+    name1: roadmap
+    href1: https://roadmap.sh/
+
+    name2: bash
+    href2: https://devhints.io/bash
+
+    name3: css
+    href3: https://htmlcheatsheet.com/css/
+
+
+  - label: "-"
+
+  - name1: postman
+    href1: https://www.postman.com/
+
+    name2: sonarqube
+    href2: https://www.sonarqube.org/
+
+    name3: goaccess
+    href3: https://goaccess.io/
+
+    name4: rpt
+    href4: https://codemarc.net/report.html
+
+  - name1: rabbitmq
+    href1: https://www.rabbitmq.com/
+
+    name2: zeromq
+    href2: https://zeromq.org/
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ

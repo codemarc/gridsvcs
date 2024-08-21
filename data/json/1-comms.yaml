@@ -1,0 +1,109 @@
+name: comms
+title: communicate / discuss
+href1: https://www.youtube.com/@allin
+href2: "*/settings"
+links:
+  - pre1: " "
+    post1: ㅤ
+    post2: "|"
+
+    name1: microsoft 365
+    href1: https://www.microsoft.com/en-us/microsoft-365
+
+    name2: work
+    href2: https://www.office.com/?auth=2
+
+    name3: home
+    href3: https://www.office.com/?auth=1
+
+  - pre1: " "
+    post1: ㅤ
+    pre3: "|"
+
+    name1: google office
+    href1: https://admin.google.com/?authuser=1
+
+    name2: gmail
+    href2: https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox
+
+    name3: dashboard
+    href3: https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox
+
+
+  - pre1: ㅤ
+    post1:
+    post2:
+    post3:
+
+    name1: onedrive
+    href1: https://onedrive.live.com
+
+    name2: dropbox
+    href2: https://www.dropbox.com/
+
+    name3: g-drive
+    href3: https://drive.google.com/drive/u/0/
+
+    name4: icloud
+    href4: https://www.icloud.com/iclouddrive/
+
+  - pre1: ㅤ
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: zoom
+    href1: https://zoom.us/
+    title1: Zoom Video Communications
+
+    name2: slack
+    href2: https://slack.com/
+    title2: "Slack: Where Work Happens"
+
+    name3: meet
+    href3: https://meet.google.com/
+    title3: "Google Meet: Secure Video Meetings"
+    name4: teams
+    href4: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
+    title4: "Microsoft Teams: Group Chat Software"
+
+  - pre1: ㅤ
+
+  - name1: -articles
+
+  - pre1:  
+    post1: ㅤ
+    post2: ㅤ
+
+    name1: reddit
+    href1: https://www.reddit.com/
+
+    name2: substack
+    href2: https://substack.com/home
+
+    name3: medium
+    href3: https://medium.com/
+
+    name4: notion
+    href4: https://www.notion.so
+    title4: Notion.so is a popular productivity tool that can be described as an all-in-one workspace. It lets you take notes, create documents, manage tasks, and even build wikis and databases – all in a single platform.
+
+  - pre1:  
+    post1:  
+    post2:  
+    post3:  
+
+    name1: dev.to
+    href1: https://dev.to/
+
+    name2: quora
+    href2: https://www.quora.com/topic/Software-Engineering
+
+    name3: groups
+    href3: https://www.linkedin.com/groups/
+
+    name4: hacker news
+    href4: https://news.ycombinator.com
+
+  - pre1: ㅤ
+  - pre1: ㅤ

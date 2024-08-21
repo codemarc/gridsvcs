@@ -1,0 +1,99 @@
+name: msft
+title: microsoft
+href1: https://developer.microsoft.com/
+href2: "*/settings"
+links:
+
+  - pre1:      
+    name1: learn
+    href1: https://docs.microsoft.com/learn/
+    title1: "Microsoft Learn"
+    post1:  | 
+
+    name2: docs
+    href2: https://docs.microsoft.com/
+    title2: "Microsoft Docs"
+    post2:  | 
+
+    name3: q&a
+    href3: https://docs.microsoft.com/answers/
+    title3: "Microsoft Q&A"
+    post3:  | 
+
+    name4: dev blog
+    href4: https://devblogs.microsoft.com/
+    title4: "Microsoft Developer Blogs"
+
+  - pre1:    ㅤ
+    name1: vs code
+    href1: https://code.visualstudio.com/docs
+    title1: "Visual Studio Code"
+
+    name2: .net
+    href2: https://dotnet.microsoft.com/
+    title2: ".NET"
+
+    name3: nuget
+    href3: https://www.nuget.org/
+    title3: "NuGet"
+
+    name4: mssql
+    href4: https://www.microsoft.com/sql-server/
+    title4: "SQL Server"
+
+  - name1: ""
+
+  - name1: -     azure    
+    href1: https://azure.microsoft.com/
+
+  - name1: devops
+    href1: https://azure.microsoft.com/services/devops/
+    title1: "Azure DevOps"
+
+    name2: functions
+    href2: https://azure.microsoft.com/services/functions/
+    title2: "Azure Functions"
+
+    name3: ak8ss
+    href3: https://azure.microsoft.com/services/kubernetes-service/
+    title3: "Azure Kubernetes Service (AKS)"
+
+    name4: ml studio
+    href4: https://studio.azureml.net/
+    title4: "Azure Machine Learning Studio"
+
+  - pre1:   
+    name1: identity platform
+    href1: https://azure.microsoft.com/services/active-directory/
+    title1: "Microsoft Identity Platform"
+
+    pre2:  "ㅤㅤㅤㅤ"
+    name2: graph
+    href2: https://developer.microsoft.com/graph/
+    title2: "Microsoft Graph"
+
+  - label: "-"
+
+  - pre1: ~  power   
+    name1: shell
+    href1: https://docs.microsoft.com/powershell/
+    title1: "PowerShell"
+    post1:  
+
+    name2: apps
+    href2: https://powerapps.microsoft.com/
+    title2: "Power Apps"
+    post2:  
+
+    name3: automate
+    href3: https://flow.microsoft.com/
+    title3: "Power Automate"
+    post3:  
+
+    name4: bi
+    href4: https://powerbi.microsoft.com/
+    title4: "Power BI"
+
+  - pre1: ㅤ
+
+  - name1:  

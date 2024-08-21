@@ -1,0 +1,97 @@
+{
+  "name": "banking",
+  "title": "banking",
+  "href2": "*/settings",
+  "links": [
+    {
+      "pre1": "  ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "chase",
+      "href1": "https://chaseonline.chase.com/",
+      "name2": "bofa",
+      "href2": "https://www.bankofamerica.com/",
+      "name3": "wells fargo",
+      "href3": "https://wellsfargo.com/",
+      "name4": "citi",
+      "href4": "https://online.citi.com/US/ag/dashboard/credit-card"
+    },
+    {
+      "pre1": "  ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "usbank",
+      "href1": "https://www.usbank.com/index.html",
+      "name2": "pnc",
+      "href2": "https://www.pnc.com/en/personal-banking.html",
+      "name3": "truist",
+      "href3": "https://www.truist.com/",
+      "name4": "capone",
+      "href4": "https://myaccounts.capitalone.com/welcome"
+    },
+    {
+      "pre1": "    ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "fifththird",
+      "href1": "https://www.53.com/content/fifth-third/en/login.html",
+      "name2": "td",
+      "href2": "https://onlinebanking.tdbank.com/",
+      "name3": "bmo",
+      "href3": "https://www.bmo.com/en-us/main/personal/",
+      "name4": "citizens",
+      "href4": "https://www.citizensbank.com/"
+    },
+    {
+      "pre1": " ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "1st citzens",
+      "name2": "m&t",
+      "name3": "huntington nb"
+    },
+    {
+      "pre1": " ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "amex",
+      "href1": "https://www.americanexpress.com/en-us/account/login?inav=iNavLnkLog",
+      "name2": "key Bank",
+      "name3": "ally Bank",
+      "name4": "hsbc"
+    },
+    {
+      "name1": "-cards"
+    },
+    {
+      "pre1": "       ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "discover",
+      "href1": "https://portal.discover.com/customersvcs/universalLogin/ac_main",
+      "name2": "apple",
+      "href2": "https://card.apple.com",
+      "name3": "ignite",
+      "href3": "https://cards.theignitecard.com/dfc/dashboard"
+    },
+    {
+      "pre1": "~  syncbank ⇒ ",
+      "post1": "ㅤ|ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "amazon",
+      "href1": "https://www.synchrony.com/accounts/?client=amazon",
+      "name2": "others",
+      "href2": "https://www.synchrony.com/accounts/"
+    },
+    {
+      "pre1": " "
+    }
+  ]
+}
