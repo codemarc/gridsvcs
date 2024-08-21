@@ -159,7 +159,7 @@ export function server() {
          res.status(result.status).send(`  Quotes ${ topic ?? ""}\n\n${result.data.map((quote,ndx) => `  ${ndx+1}. ${quote.message} - ${quote.author}`).join("\n\n")}`)
       } else {
          res.setHeader("Content-Type", "application/json")
-         res.status(result.status).send(result)
+         res.status(result.status).send(result.data)
       }
    })
 
