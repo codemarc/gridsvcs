@@ -1,0 +1,128 @@
+name:  shopify
+title: shopify
+href1: https://www.shopify.com/
+title2: status
+href2: https://www.shopifystatus.com/
+links:
+
+  - pre1:  
+    name1: the puppy leo shop
+    href1: http://puppyleo.com
+
+    pre2: "ㅤ🐶ㅤ"
+    name2: admin
+    href2: https://admin.shopify.com/
+
+  - pre1: ㅤ
+    name1: zendrop
+    href1: https://app.zendrop.com/dashboard
+
+    pre2: ㅤ
+    name2: cj
+    href2: https://www.cjdropshipping.com/
+
+    pre3: ㅤ
+    name3: shineon
+    href3: https://www.shineon.com/"
+
+    pre4: ㅤ
+    name4: printful
+    href4: https://www.printful.com/
+
+  - pre1: ㅤㅤ
+    name1: summer 2024
+    href1: https://www.shopify.com/editions/summer2024
+
+    pre2: ㅤ
+    name2: changelog
+    href2: https://shopify.dev/changelog
+
+  - name1: "  src  "
+    href1: https://shopify.github.io
+    post1: "  ◦  "
+
+    name2: "  dev  "
+    href2: https://shopify.dev/
+    post2: "  ◦  "
+
+    name3: apps
+    href3: https://apps.shopify.com/
+    title3: Shopify App Store
+    post3: " ◦ "
+
+    name4: community
+    href4: https://community.shopify.com/c/shopify-community/ct-p/en
+    title4: Shopify Community Forums
+
+  - pre1: ㅤ
+    name1: api
+    href1: https://shopify.dev/api
+    title1: Shopify API Reference
+
+    pre2:   
+    name2: polaris
+    href2: https://polaris.shopify.com/
+    title2: Shopify Polaris - React Components
+
+    pre3:   
+    name3: partners
+    href3: https://help.shopify.com/en/partners
+
+    pre4:   
+    name4: academy
+    href4: https://www.shopify.com/partners/academy
+    title4: Shopify Partner Academy
+
+  - pre1:  
+    name1: themekit
+    href1: https://shopify.github.io/themekit/
+    title1: Shopify Theme Kit
+    post1: "|"
+
+    name2: bridge
+    href2: https://shopify.dev/tools/app-bridge
+    title2: Shopify App Bridge
+    post2: "|"
+
+    name3: authflow
+    href3: https://shopify.dev/apps/auth/oauth
+    title3: Implementing OAuth for Shopify Apps
+    post3: "|"
+
+    name4: social
+    href4: https://buffer.com/library/social-media-sites/#20-tumblr-%E2%80%94-135-million-maus
+    title4: buffer.com Buffer helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.
+
+  - name1: arch
+    href1: https://shopify.dev/themes/architecture
+    title1: Shopify Theme Architecture
+    post1: "|"
+
+    name2: templates
+    href2: https://shopify.dev/themes/architecture/templates
+    title2: Shopify Theme Templates
+    post2: "|"
+
+    name3: sections
+    href3: https://shopify.dev/themes/architecture/sections
+    title3: Shopify Theme Sections
+    post3: "|"
+
+    name4: inspector
+    href4: https://shopify.dev/themes/tools/theme-inspector
+    title4: Shopify Theme Inspector for Chrome
+
+  - pre1: "ㅤㅤ"
+    name1: nodesdk
+    href: https://github.com/Shopify/shopify-node-api
+    post1: ✫
+
+    name2: store
+    href2: https://themes.shopify.com/
+    post2: ✫
+
+    name3: exchange
+    href3: https://exchange.shopify.com/
+    title3: Shopify Exchange Marketplace
+
+  - name1: ㅤ

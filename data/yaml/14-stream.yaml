@@ -1,0 +1,134 @@
+name: stream
+title: stream / shop
+href1: https://www.xfinity.com/stream/
+href2: "*/settings"
+links:
+  - pre1:     
+    post1: ✫
+    post2: ✫
+    post3: ✫
+
+    name1: alexa
+    href1: https://alexa.amazon.com/
+
+    name2: prime
+    href2: https://amazon.com/
+
+    name3: video
+    href3: https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_dvm_us_eg_cs_nav_rec_T1
+
+    name4: music
+    href4: https://music.amazon.com/
+
+  - pre1:     
+    name1: audible
+    href1: https://www.audible.com/
+    title1: "Audible"
+    post1:  | 
+
+    name2: twitch
+    href2: https://www.twitch.tv/
+    title2: "Twitch"
+    post2:  | 
+
+    name3: imdb
+    href3: https://www.imdb.com/
+    title3: "IMDb"
+    post3:  | 
+
+    name4: kindle
+    href4: https://www.amazon.com/kindle-dbs/fd/kcp
+    title4: "Kindle Direct Publishing"
+
+  - pre1:  
+    post1:   
+    post2:   
+    post3:   
+
+    name1: xfinity
+    href1: https://www.xfinity.com/stream/
+
+    name2: netflix
+    href2: https://www.netflix.com/
+
+    name3: hbomax
+    href3: https://hbomax.com/
+
+    name4: peacock
+    href4: http://peacock.tv/
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+
+    name1: youtube
+    href1: https://www.youtube.com/
+
+    name2: apple music
+    href2: https://music.apple.com/
+
+    name3: spotify
+    href3: https://www.spotify.com/
+
+  - pre1:  
+    name1: "-shopify"
+    href1: https://www.shopify.com/editions/summer2024
+    xhref1: https://www.shopify.com/
+
+  - pre1:    
+    post2:   
+    post3:   
+
+    name1: the puppy leo shop
+    href1: http://puppyleo.com
+
+    name2:  🐶   admin
+    href2: https://admin.shopify.com/
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+
+    name1: zendrop
+    href1: https://app.zendrop.com/dashboard
+
+    name2: cj
+    href2: https://www.cjdropshipping.com/
+
+    name3: shineon
+    href3: https://www.shineon.com/"
+
+    name4: printful
+    href4: https://www.printful.com/
+
+  - pre1:            
+    post1:   
+    post2:   
+    post3:   
+
+    name1: src
+    href1: https://shopify.github.io
+
+    name2: dev
+    href2: https://shopify.dev/
+
+    name3: apps
+    href3: https://apps.shopify.com/
+    title3: Shopify App Store
+
+    name4: polaris
+    href4: https://polaris.shopify.com/
+    title4: Shopify Polaris - React Components
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+
+  - pre1:       
+    post1:   
+    post2:   
+    post3:   
+

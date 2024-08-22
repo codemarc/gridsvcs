@@ -1,9 +1,13 @@
 {
-   "name": "gdata",
+   "name": "y2j.js",
    "description": "gridlink data tool chain",
    "version": "0.0.1",
+   "main": "y2j.js",
    "private": true,
-   "devDependencies": {
+   "bin": {
+      "y2j": "node y2j.js"
+   },
+   "dependencies": {
       "js-yaml": "^4.1.0"
    }
 }

@@ -1,0 +1,83 @@
+{
+  "name": "services",
+  "title": "services",
+  "href1": "https://codemarc.net/doc/gridsvcs/#/",
+  "href2": "*/settings",
+  "links": [
+    {
+      "pre1": "     gridsvcs:      ",
+      "post1": "  ",
+      "post2": "  ",
+      "name1": "dev",
+      "href1": "http://localhost:3000/v1/api-docs/",
+      "name2": "test",
+      "href2": "https://codemarc.net/api/v1/api-docs/",
+      "name3": "prod",
+      "href3": "http://localhost:3000/v1/api-docs/"
+    },
+    {
+      "pre1": ""
+    },
+    {
+      "pre1": "~  deployments"
+    },
+    {
+      "pre1": "       dev:     ",
+      "post1": " |",
+      "post2": " |",
+      "name1": "status",
+      "href1": "http://localhost:3000/v1/motd/status",
+      "name2": "quotes",
+      "href2": "http://localhost:3000/v1/motd/quotes",
+      "name3": "topics",
+      "href3": "http://localhost:3000/v1/motd/topics"
+    },
+    {
+      "pre1": "      test:     ",
+      "post1": " |",
+      "post2": " |",
+      "name1": "status",
+      "href1": "https://codemarc.net/api/v1/motd/status",
+      "name2": "quotes",
+      "href2": "https://codemarc.net/api/v1/motd/quotes",
+      "name3": "topics",
+      "href3": "http://codemarc.net/api/v1/motd/topics"
+    },
+    {
+      "pre1": "      prod:    ",
+      "post1": " |",
+      "post2": " |",
+      "name1": "status",
+      "href1": "http://localhost:3000/v1/motd/status",
+      "name2": "quotes",
+      "href2": "http://localhost:3000/v1/motd/quotes",
+      "name3": "topics",
+      "href3": "http://localhost:3000/v1/motd/topics"
+    },
+    {
+      "pre1": ""
+    },
+    {
+      "pre1": "~  projects"
+    },
+    {
+      "pre1": "ㅤ",
+      "post1": "ㅤ",
+      "post2": "ㅤ",
+      "post3": "ㅤ",
+      "name1": "gridlinks",
+      "href1": "https://github.com/users/codemarc/projects/6",
+      "name2": "gridsvcs",
+      "href2": "https://github.com/users/codemarc/projects/5"
+    },
+    {
+      "pre1": "ㅤ"
+    },
+    {
+      "pre1": "ㅤ"
+    },
+    {
+      "pre1": "ㅤ"
+    }
+  ]
+}

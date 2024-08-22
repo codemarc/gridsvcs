@@ -1,0 +1,80 @@
+name: house
+title: household / credit
+href1: https://home.nest.com/home
+href2: "*/settings"
+links:
+  - pre1:       
+    post1:  
+    post2:  
+    post3:  
+
+    name1: flagstar
+    href1: https://www.flagstar.com/myloans/login
+    title1: mortgage
+
+    name2: campbell
+    href2: https://portal.campbellproperty.com/dashboard
+    title2: hoa property manager
+
+    name3: mizner cc
+    href3: https://www.miznercountryclub.org/
+    title3: mizner
+
+  - pre1:    
+    post1:     
+    post2:     
+    post3:     
+
+    name1: fpl
+    href1: https://www.fpl.com/
+    title1: florida power and light
+
+    name2: water
+    href2: https://ebill.pbcwater.com/Security/loginui.aspx
+    title2: palm beach county water
+
+    name3: xfinity
+    href3: https://customer.xfinity.com/
+
+    name4: verizon
+    href4: http://my.verizon.com/
+
+  - pre1:  
+  - pre1:  
+  - pre1:  
+
+  - name1: "-education"
+    href1: https://studentaid.gov/h/apply-for-aid/fafsa
+
+  - pre1:  ㅤ
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: one.uf
+    href1: https://one.uf.edu/
+
+    name2: dpe
+    href2: https://www.billhighway.com/aph/forChapters/v2/login.aspx
+
+    name3: gru
+    href3: https://myaccount.gru.com
+
+    name4: trimark
+    href4: https://trimarkp.twa.rentmanager.com/Shared/Login
+
+  - pre1:  ㅤ
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: nelnet
+    href1: https://nelnet.studentaid.gov/welcome
+
+    name2: aidvantage
+    href2: https://aidvantage.studentaid.gov/
+
+    name3: salliemae
+    href3: https://www.salliemae.com/login/
+
+  - pre1:  
