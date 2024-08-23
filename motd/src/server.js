@@ -8,6 +8,22 @@ import qqs from "./qqs.js"
 import logger from "./logger.js"
 import swaggerSetup from "./swagger.js"
 
+const HTMLSTART = (title, body) => {
+   return `<html lang="en">
+   <head>
+      <title>${title}</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:400,500,600,700&amp;display=swap">
+      <style type="text/css">
+      body {padding:20px;font-family: 'Mukta', sans-serif;font-size: 16px;font-weight: 40;}</style>
+   </head>
+   <body>
+     <h1>${title}</h1>
+     ${body}
+   </body>
+</html>`
+}
+
+
 export function server() {
    const app = express()
    const PORT = process.env.GSPORT ?? 3000
@@ -130,39 +146,36 @@ export function server() {
    app.get("/v1/motd/quotes", async (req, res) => {
       logger.info(`GET /v1/motd/quotes`)
       const { topic, format } = req.query
-      const result =(topic)?await qq.getQuotesByTopic(topic):await qq.getAllQuotes()
+      const result = (topic && topic !== "general") ? await qq.getQuotesByTopic(topic) : await qq.getAllQuotes()
+
       if (format === "html") {
          res.setHeader("Content-Type", "text/html")
-         res.status(result.status).send(`
-            <html lang="en">
-            <head>
-            <title>Quotes ${topic??""}</title>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:400,500,600,700&amp;display=swap">
-            <style type="text/css">
-            body {
-            padding:20px;
-            font-family: 'Mukta', sans-serif;
-            font-size: 16px;
-            font-weight: 40;
-            }
-            </style>
-            </head>
-            <body>
-            <h1>Quotes ${topic ?? ""}</h1>
-            <ol>
-            ${result.data.map(quote => `<li>${quote.message} - ${quote.author}</li>`).join("")}
-            </ol>
-            </body>
-            </html>`)
+         if (result.status !== 200) {
+            console.error("Error", result)
+            res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<p>quotes are not currentlly available</p>`))
+         } else {
+            res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<ol>${result.data.map(quote => `<li>${quote.message} - ${quote.author}</li>`).join("")}</ol>`))
+         }
+
       } else if (format === "text") {
          res.setHeader("Content-Type", "text/plain")
-         res.status(result.status).send(`  Quotes ${ topic ?? ""}\n\n${result.data.map((quote,ndx) => `  ${ndx+1}. ${quote.message} - ${quote.author}`).join("\n\n")}`)
+         if (result.status !== 200) {
+            console.error("Error", result)
+            res.status(result.status).send(`Quotes ${topic ?? ""} \n\nquotes are not currentlly available\n\n`)
+         } else {
+            res.status(result.status).send(`  Quotes ${topic ?? ""} \n\n${result.data.map((quote, ndx) => `  ${ndx + 1}. ${quote.message} - ${quote.author}`).join("\n\n")}`)
+         }
+
       } else {
          res.setHeader("Content-Type", "application/json")
-         res.status(result.status).send(result.data)
+         if (result.status !== 200) {
+            console.error("Error", result)
+            res.status(result.status).send({})
+         } else {
+            res.status(result.status).send(result.data)
+         }
       }
    })
-
 
    /**
     * @swagger
@@ -191,6 +204,14 @@ export function server() {
     *   get:
     *     tags: [motd]
     *     summary: Retrieve a list of topic prompts
+    *     parameters:
+    *       - in: query
+    *         name: format
+    *         schema:
+    *           type: string
+    *           enum: [json, html, text]
+    *         description: Optional format of the response (json, html or text)*
+    *
     *     responses:
     *       200:
     *         description: A list of topic prompts
@@ -202,9 +223,31 @@ export function server() {
     *         description: Internal server error
     */
    app.get("/v1/motd/topics", async (req, res) => {
+
       logger.info(`GET /v1/motd/topics`)
       const result = await qq.getTopics()
-      res.status(result.status).send(result.data)
+      const { format } = req.query
+
+      if (format === "html") {
+         res.setHeader("Content-Type", "text/html")
+         if (result.status !== 200) {
+            console.error("Error", result)
+            res.status(result.status).send(HTMLSTART("Topics", `<p>topics are not currentlly available</p>`))
+         } else {
+            res.status(result.status).send(HTMLSTART("Topics", `<ol> ${result.data.map(item => `<li><a href="quotes?format=html&topic=${item.topic}">${item.topic} - ${item.prompt}</li>`).join("")}</ol > `))
+         }
+      } else if (format === "text") {
+         res.setHeader("Content-Type", "text/plain")
+         if (result.status !== 200) {
+            console.error("Error", result)
+            res.status(result.status).send(`  Topics\n\n  topics are not currently available\n\n`)
+         } else {
+            res.status(result.status).send(`  Topics\n\n${result.data.map((item, ndx) => `  ${ndx + 1}. ${item.topic} - ${item.prompt}`).join("\n\n")}`)
+         }
+      } else {
+         res.setHeader("Content-Type", "application/json")
+         res.status(result.status).send(result.data)
+      }
    })
 
 
