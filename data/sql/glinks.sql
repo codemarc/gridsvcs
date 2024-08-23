@@ -20,12 +20,11 @@ INSERT INTO public.glinks (gsid, links) VALUES
 , (8,pg_read_file('/gridjson/apache.json')::jsonb)
 , (9,pg_read_file('/gridjson/fintech.json')::jsonb)
 , (10,pg_read_file('/gridjson/banking.json')::jsonb)
-, (11,
-   pg_read_file('/gridjson/house.json')::jsonb) , (12,
-                                                   pg_read_file('/gridjson/cloud.json')::jsonb) , (13,
-                                                                                                   pg_read_file('/gridjson/services.json')::jsonb) , (14,
-                                                                                                                                                      pg_read_file('/gridjson/stream.json')::jsonb) , (15,
-                                                                                                                                                                                                       pg_read_file('/gridjson/shopify.json')::jsonb)
+, (11,pg_read_file('/gridjson/house.json')::jsonb) 
+, (12,pg_read_file('/gridjson/cloud.json')::jsonb) 
+, (13,pg_read_file('/gridjson/services.json')::jsonb) 
+, (14,pg_read_file('/gridjson/stream.json')::jsonb) 
+-- , (15,pg_read_file('/gridjson/shopify.json')::jsonb)
 ;
 
 select * from public.gsets;
