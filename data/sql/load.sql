@@ -32,7 +32,7 @@ CREATE TABLE public.users (
 ALTER TABLE public.users OWNER to gridadmin;
 
 
-INSERT INTO public.panels ("name",links) VALUES 
+INSERT INTO public.panels ("name",links) VALUES
   ('comms',pg_read_file('/gridjson/comms.json')::jsonb)
 , ('devtools',pg_read_file('/gridjson/devtools.json')::jsonb)
 , ('genai',pg_read_file('/gridjson/genai.json')::jsonb)
@@ -43,21 +43,22 @@ INSERT INTO public.panels ("name",links) VALUES
 , ('apache',pg_read_file('/gridjson/apache.json')::jsonb)
 , ('fintech',pg_read_file('/gridjson/fintech.json')::jsonb)
 , ('banking',pg_read_file('/gridjson/banking.json')::jsonb)
-, ('house',pg_read_file('/gridjson/house.json')::jsonb) 
-, ('cloud',pg_read_file('/gridjson/cloud.json')::jsonb) 
-, ('services',pg_read_file('/gridjson/services.json')::jsonb) 
-, ('stream',pg_read_file('/gridjson/stream.json')::jsonb) 
+, ('house',pg_read_file('/gridjson/house.json')::jsonb)
+, ('cloud',pg_read_file('/gridjson/cloud.json')::jsonb)
+, ('services',pg_read_file('/gridjson/services.json')::jsonb)
+, ('stream',pg_read_file('/gridjson/stream.json')::jsonb)
 , ('shopify',pg_read_file('/gridjson/shopify.json')::jsonb)
 ;
 
-INSERT INTO public.grids ("name", panels) VALUES 
+INSERT INTO public.grids ("name", panels) VALUES
   ('builtin','[1,2,3,4,5,6,7,8]')
   , ('personal','[1,9,10,11,3,12,13,14]')
   ;
 
-INSERT INTO public.users ("name", "role", grids) VALUES 
+INSERT INTO public.users ("name", "role", grids) VALUES
   ('unknown','user','[1]')
   , ('codemarc','admin','[1,2]')
+  , ('info','user','[1]')
   ;
 
 select * from panels;

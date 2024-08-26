@@ -1,3 +1,5 @@
+select * from public.users
+
 SELECT 
     u.name AS username,
     u.role AS userrole,
@@ -8,10 +10,13 @@ FROM
 JOIN 
     jsonb_array_elements_text(u.grids) AS grid_id ON TRUE
 JOIN 
-    public.grids g ON g.id = grid_id::INT
+    public.grids g ON g.id = grid_id::INT 
+WHERE
+   -- u.name = 'unknown'
+   -- u.name = 'codemarc'
+   u.name = 'info'
+   ;
 
--- WHERE u.name = 'unknown';
-WHERE u.name = 'codemarc';
 
 
 SELECT 
@@ -33,7 +38,7 @@ JOIN
 JOIN 
     public.panels p ON p.id = panel_id::INT
 WHERE 
-    u.name = 'unknown' 
+    u.name = 'info' 
     --u.name = 'codemarc' 
     --AND g.id=1 
     --AND g.id=2 
@@ -41,3 +46,4 @@ WHERE
     --AND g.name = 'personal'
     --AND g.name = 'builtin'
     ;
+
