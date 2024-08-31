@@ -1,11 +1,11 @@
 {
-   "name": "y2j.js",
-   "description": "gridlink data tool chain",
+   "name": "convert",
+   "description": "gridsvcs data tool chain",
    "version": "0.0.1",
-   "main": "y2j.js",
    "private": true,
-   "bin": {
-      "y2j": "node y2j.js"
+   "scripts": {
+      "y2j": "node _y2j.js",
+      "j2s": "node _j2s.js"
    },
    "dependencies": {
       "js-yaml": "^4.1.0"

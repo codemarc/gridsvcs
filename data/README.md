@@ -1,4 +1,7 @@
 # Gridlinks Data
 
-the sql folder is used to maintain the gridlinks database 
-the json folder contains yaml/json created by running js-yaml src.yaml > src.json
+The sql folder is used to maintain the gridlinks database
+ - to convert yaml to json run yarn y2j
+ - to convert json to sql run yarn j2s
+
+
