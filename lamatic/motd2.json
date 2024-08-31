@@ -1,0 +1,121 @@
+{
+   "nodes": [
+      {
+         "id": "1",
+         "data": {
+            "trigger": "graphqlNode_8x2ac9a7ev"
+         },
+         "type": "groupTriggerNode",
+         "width": 240,
+         "height": 120,
+         "dragging": false,
+         "position": {
+            "x": 26,
+            "y": -10
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": -263.32914821637917,
+            "y": -44.037624518506135
+         }
+      },
+      {
+         "id": "graphqlNode_8x2ac9a7ev",
+         "data": {
+            "modes": {},
+            "nodeId": "graphqlNode",
+            "values": {
+               "nodeName": "Graphql",
+               "responeType": "realtime",
+               "advance_schema": "{\n    \"Topic\": \"string\"\n}"
+            }
+         },
+         "type": "newTriggerNode",
+         "width": 200,
+         "extent": "parent",
+         "height": 64,
+         "parentId": "1",
+         "position": {
+            "x": 22,
+            "y": 48
+         },
+         "selected": false,
+         "draggable": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top"
+      },
+      {
+         "id": "graphqlResponseNode_2cbj83i3cp",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "graphqlResponseNode",
+            "values": {
+               "outputMapping": "{\n    \"response\": \"{{InstructorLLMNode_38zh09bzz3.output}}\"\n}"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": 25.014705267681734,
+            "y": 304.68584560400376
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": 25.014705267681734,
+            "y": 304.68584560400376
+         }
+      },
+      {
+         "id": "InstructorLLMNode_38zh09bzz3",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "InstructorLLMNode",
+            "values": {
+               "schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"quotes\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"message\": {\n            \"type\": \"string\",\n            \"required\": true\n          },\n          \"author\": {\n            \"type\": \"string\",\n            \"required\": true\n          }\n        },\n        \"additionalProperties\": true\n      }\n    }\n  }\n}",
+               "nodeName": "JSON Generator",
+               "promptTemplate": "create a list of 50 \"message of the day\" quotes {{graphqlNode_8x2ac9a7ev.output.Topic}}\nformatted as an array of json objects containing the fields message and author",
+               "generativeModelName": "OpenAI4o"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": 24.508202493063834,
+            "y": 173.41544182548427
+         },
+         "selected": false,
+         "positionAbsolute": {
+            "x": 24.508202493063834,
+            "y": 173.41544182548427
+         }
+      }
+   ],
+   "edges": [
+      {
+         "id": "reactflow__edge-1-InstructorLLMNode_38zh09bzz3",
+         "type": "CustomAddEdge",
+         "source": "1",
+         "target": "InstructorLLMNode_38zh09bzz3",
+         "sourceHandle": null,
+         "targetHandle": null
+      },
+      {
+         "id": "reactflow__edge-InstructorLLMNode_38zh09bzz3-graphqlResponseNode_2cbj83i3cp",
+         "type": "CustomAddEdge",
+         "source": "InstructorLLMNode_38zh09bzz3",
+         "target": "graphqlResponseNode_2cbj83i3cp",
+         "sourceHandle": null,
+         "targetHandle": null
+      }
+   ]
+}

@@ -1,0 +1,179 @@
+{
+   "nodes": [
+      {
+         "id": "1",
+         "data": {
+            "trigger": "graphqlNode_syytqtazla"
+         },
+         "type": "groupTriggerNode",
+         "width": 240,
+         "height": 120,
+         "dragging": false,
+         "position": {
+            "x": -427.6113799310676,
+            "y": -101.66240770940999
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": -427.6113799310676,
+            "y": -101.66240770940999
+         }
+      },
+      {
+         "id": "graphqlNode_syytqtazla",
+         "data": {
+            "modes": {},
+            "nodeId": "graphqlNode",
+            "values": {
+               "nodeName": "GridCatData",
+               "responeType": "realtime",
+               "advance_schema": "{\n    \"cat\": \"string\",\n    \"hint\": \"string\",\n    \"user\": \"string\"\n}"
+            }
+         },
+         "type": "newTriggerNode",
+         "width": 200,
+         "extent": "parent",
+         "height": 64,
+         "parentId": "1",
+         "position": {
+            "x": 20,
+            "y": 48
+         },
+         "selected": false,
+         "draggable": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top"
+      },
+      {
+         "id": "graphqlResponseNode_vaejvicre6",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "graphqlResponseNode",
+            "values": {
+               "outputMapping": "{\n    \"name\": \"{{LLMNode_40ads8tu2b.output.generatedResponse}}\",\n    \"href\": \"{{LLMNode_40ads8tu2b.output.generatedResponse}}\",\n    \"testans\": \"{{codeNode_mstjd7n5uc.output.me}}\"\n}"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": -15.793619671994975,
+            "y": 342.3534874514276
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": -15.793619671994975,
+            "y": 342.3534874514276
+         }
+      },
+      {
+         "id": "LLMNode_40ads8tu2b",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "LLMNode",
+            "values": {
+               "nodeName": "Text Generate",
+               "promptTemplate": "create a set of 10 link using for the {{graphqlNode_syytqtazla.output.cat}} \ndomain that {{graphqlNode_syytqtazla.output.hint}}\nusing the preferences of {{graphqlNode_syytqtazla.output.user}}",
+               "generativeModelName": "Lamatic Service Acct"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": -426.7909227333884,
+            "y": 89.49965440899197
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": -426.7909227333884,
+            "y": 89.49965440899197
+         }
+      },
+      {
+         "id": "codeNode_mstjd7n5uc",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "codeNode",
+            "values": {
+               "code": "const ans={{LLMNode_40ads8tu2b.output.generatedResponse}} ?? '';\nconsole.log(ans);\noutput = {\"me\":\"marc\", \"res\":ans}",
+               "nodeName": "Code"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": -369.63566888833503,
+            "y": 243.52089282765837
+         },
+         "selected": true,
+         "positionAbsolute": {
+            "x": -369.63566888833503,
+            "y": 243.52089282765837
+         }
+      },
+      {
+         "id": "postgresNode_5cdqw74lt8",
+         "type": "dynamicNode",
+         "position": {
+            "x": -32.681525166912024,
+            "y": 9.551025723276112
+         },
+         "data": {
+            "label": "dynamicNode node",
+            "nodeId": "postgresNode",
+            "values": {
+               "nodeName": "Postgres"
+            },
+            "modes": {}
+         },
+         "width": 240,
+         "height": 66,
+         "selected": false,
+         "positionAbsolute": {
+            "x": -32.681525166912024,
+            "y": 9.551025723276112
+         },
+         "dragging": false
+      }
+   ],
+   "edges": [
+      {
+         "id": "reactflow__edge-1-LLMNode_40ads8tu2b",
+         "type": "CustomAddEdge",
+         "source": "1",
+         "target": "LLMNode_40ads8tu2b",
+         "sourceHandle": null,
+         "targetHandle": null
+      },
+      {
+         "id": "reactflow__edge-LLMNode_40ads8tu2b-codeNode_mstjd7n5uc",
+         "type": "CustomAddEdge",
+         "source": "LLMNode_40ads8tu2b",
+         "target": "codeNode_mstjd7n5uc",
+         "sourceHandle": null,
+         "targetHandle": null
+      },
+      {
+         "id": "reactflow__edge-codeNode_mstjd7n5uc-graphqlResponseNode_vaejvicre6",
+         "type": "CustomAddEdge",
+         "source": "codeNode_mstjd7n5uc",
+         "target": "graphqlResponseNode_vaejvicre6",
+         "sourceHandle": null,
+         "targetHandle": null
+      }
+   ]
+}

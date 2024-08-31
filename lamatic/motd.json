@@ -1,0 +1,124 @@
+{
+   "nodes": [
+      {
+         "id": "1",
+         "data": {
+            "trigger": "graphqlNode_8x2ac9a7ev"
+         },
+         "type": "groupTriggerNode",
+         "width": 240,
+         "height": 120,
+         "dragging": false,
+         "position": {
+            "x": 26,
+            "y": -10
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": -263.32914821637917,
+            "y": -44.037624518506135
+         }
+      },
+      {
+         "id": "graphqlNode_8x2ac9a7ev",
+         "data": {
+            "modes": {},
+            "nodeId": "graphqlNode",
+            "values": {
+               "nodeName": "Graphql",
+               "responeType": "realtime",
+               "advance_schema": "{\n    \"Topic\": \"string\"\n}"
+            }
+         },
+         "type": "newTriggerNode",
+         "width": 200,
+         "extent": "parent",
+         "height": 64,
+         "parentId": "1",
+         "position": {
+            "x": 22,
+            "y": 48
+         },
+         "selected": false,
+         "draggable": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top"
+      },
+      {
+         "id": "LLMNode_xjreqjdznn",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "LLMNode",
+            "values": {
+               "nodeName": "Text Generate1",
+               "promptTemplate": "create a list of 25 \"message of the day\" quotes {{graphqlNode_8x2ac9a7ev.output.Topic}}",
+               "generativeModelName": "default"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": 26,
+            "y": 167
+         },
+         "selected": false,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": -112.66096999745747,
+            "y": 154.32125809693312
+         }
+      },
+      {
+         "id": "graphqlResponseNode_2cbj83i3cp",
+         "data": {
+            "label": "dynamicNode node",
+            "modes": {},
+            "nodeId": "graphqlResponseNode",
+            "values": {
+               "outputMapping": "{\n    \"response\": \"{{LLMNode_xjreqjdznn.output}}\"\n}"
+            }
+         },
+         "type": "dynamicNode",
+         "width": 240,
+         "height": 66,
+         "dragging": false,
+         "position": {
+            "x": 26,
+            "y": 317
+         },
+         "selected": true,
+         "sourcePosition": "bottom",
+         "targetPosition": "top",
+         "positionAbsolute": {
+            "x": 12.428571428571502,
+            "y": 328.42857142857144
+         }
+      }
+   ],
+   "edges": [
+      {
+         "id": "reactflow__edge-LLMNode_xjreqjdznn-graphqlResponseNode_2cbj83i3cp",
+         "type": "CustomAddEdge",
+         "source": "LLMNode_xjreqjdznn",
+         "target": "graphqlResponseNode_2cbj83i3cp",
+         "selected": false,
+         "sourceHandle": null,
+         "targetHandle": null
+      },
+      {
+         "id": "reactflow__edge-1-LLMNode_xjreqjdznn",
+         "type": "CustomAddEdge",
+         "source": "1",
+         "target": "LLMNode_xjreqjdznn",
+         "selected": false,
+         "sourceHandle": null,
+         "targetHandle": null
+      }
+   ]
+}
