@@ -1,0 +1,87 @@
+name: blank
+title: panel
+href1: https://codemarc.net/doc/gridlinks/#/
+href2: "*/settings"
+links:
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r1c1
+    name2: r1c2
+    name3: r1c3
+    name4: r1c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r2c1
+    name2: r2c2
+    name3: r2c3
+    name4: r2c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r3c1
+    name2: r3c2
+    name3: r3c3
+    name4: r3c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r4c1
+    name2: r4c2
+    name3: r4c3
+    name4: r4c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r5c1
+    name2: r5c2
+    name3: r5c3
+    name4: r5c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r6c1
+    name2: r6c2
+    name3: r6c3
+    name4: r6c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r7c1
+    name2: r7c2
+    name3: r7c3
+    name4: r7c4
+
+  - pre1:       
+    post1: ㅤ|ㅤ
+    post2: ㅤ|ㅤ
+    post3: ㅤ|ㅤ
+
+    name1: r8c1
+    name2: r8c2
+    name3: r8c3
+    name4: r8c4
+
+  - pre1: ㅤ
+
