@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="_1dHDW8nYPDwJw7qCb1Z" name="Page-1">
+        <mxGraphModel dx="1191" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="erDiagram&#10;    users ||--o{ usergrids : has&#10;    grids ||--o{ usergrids : has&#10;    grids ||--|{ panels : contains&#10;&#10;    users {&#10;        SERIAL id PK&#10;        VARCHAR(255) name&#10;        VARCHAR(255) role&#10;        VARCHAR(255) dbu&#10;        TIMESTAMP created&#10;    }&#10;&#10;    grids {&#10;        SERIAL gid PK&#10;        VARCHAR(255) name&#10;        JSONB panels&#10;        VARCHAR(255) dbu&#10;        TIMESTAMP created&#10;    }&#10;&#10;    usergrids {&#10;        SERIAL ugid PK&#10;        INT id FK&#10;        INT gid FK&#10;        BOOLEAN isactive&#10;        VARCHAR(255) dbu&#10;        TIMESTAMP created&#10;    }&#10;&#10;    panels {&#10;        SERIAL pid PK&#10;        VARCHAR(255) name&#10;        JSONB links&#10;        VARCHAR(255) dbu&#10;        TIMESTAMP created&#10;    }" style="shadow=0;dashed=0;align=left;strokeWidth=1;shape=mxgraph.mermaid.abstract.mermaid;labelBackgroundColor=#ffffff;noLabel=1;theme=default;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="20" width="430" height="370" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
