@@ -1,4 +1,4 @@
-- title: README
-  file: /README
+- title: Load
+  file: /load
 - title: Queries
-  file: /query.sql
+  file: /query
