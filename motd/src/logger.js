@@ -3,7 +3,7 @@ import { format as formatDate } from "date-fns";
 import path from "path";
 import DailyRotateFile from "winston-daily-rotate-file";
 
-const logDirectory = process.env.GSLOG ?? "logs";
+const logDirectory = process.env.GS_LOGS ?? "logs"
 const logger = winston.createLogger({
    level: "info",
    format: winston.format.combine(

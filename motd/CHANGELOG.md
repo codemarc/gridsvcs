@@ -1,6 +1,7 @@
 # gridsvcs
 
 Changes for version 0.0.6
+- added supabase support
 - added data output formatting options
 
 Changes for version 0.0.5

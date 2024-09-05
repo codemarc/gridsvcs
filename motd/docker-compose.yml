@@ -5,7 +5,9 @@ services:
     build:
       context: .
     environment:
-      - GSDATA=data
+      - GS_OPENAI_API_KEY=$GS_OPENAI_API_KEY
+      - GS_SUPAURL=$GS_SUPAURL
+      - GS_SUPAPUBLIC=$GS_SUPAURL
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./data:/gridsvcs/motd/data

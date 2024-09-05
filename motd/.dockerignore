@@ -7,6 +7,6 @@
 **/Dockerfile*
 **/npm-debug.log
 **/node_modules
-LICENSE
+
 README.md
 logs/

@@ -26,7 +26,7 @@ const HTMLSTART = (title, body) => {
 
 export function server() {
    const app = express()
-   const PORT = process.env.GSPORT ?? 3000
+   const PORT = process.env.GS_PORT ?? 3000
 
    // express middleware
    app.use(bodyParser.json())

@@ -4,7 +4,7 @@ import path from "path"
 import logger from "./logger.js"
 import _ from "lodash"
 
-const DATA_DIR = path.join(process.cwd(), process.env.GSDATA ?? "data")
+const DATA_DIR = path.join(process.cwd(), process.env.GS_DATA ?? "data")
 const QUOTES_FILE = DATA_DIR + "/quotes.json"
 const DATA_FILE = DATA_DIR + "/data.json"
 const TOPICS_FILE = DATA_DIR + "/topics.json"
@@ -79,7 +79,7 @@ export default class cqs {
       const prompt = `create a list of 50 "message of the day" quotes ${tprompt??""} formatted as an array of json objects containing the fields message and author`
       logger.info(`fetching new quotes using prompt ${prompt}`)
 
-      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+      const openai = new OpenAI({ apiKey: process.env.GS_OPENAI_API_KEY })
       const response = await openai.chat.completions.create({
          model: model,
          messages: [

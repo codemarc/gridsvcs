@@ -3,7 +3,7 @@ import logger from "./logger.js";
 import path from "path"
 import { createClient } from "@supabase/supabase-js"
 
-const DATA_DIR = path.join(process.cwd(), process.env.GSDATA ?? "data")
+const DATA_DIR = path.join(process.cwd(), process.env.GS_DATA ?? "data")
 
 // Query Service
 export default class qqs {
@@ -71,7 +71,7 @@ export default class qqs {
          const stats = await fs.stat(cacheFileName)
          const ageInMilliseconds = new Date() - stats.mtime
          const ageInSeconds = Math.floor(ageInMilliseconds / 1000)
-         const ttl = parseInt(process.env.GS_TTL ?? '7200', 10) // Default TTL is 2 hours (7200 seconds)
+         const ttl = parseInt(process.env.GS_CACHETTL ?? '7200', 10) // Default TTL is 2 hours (7200 seconds)
 
          if (ageInSeconds > ttl) {
             logger.info(`topics cache is older than TTL, fetching topics from Supabase`)
