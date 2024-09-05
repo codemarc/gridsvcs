@@ -1,6 +1,7 @@
 import fs from "fs-extra"
 import logger from "./logger.js";
 import path from "path"
+import { createClient } from "@supabase/supabase-js"
 
 const DATA_DIR = path.join(process.cwd(), process.env.GSDATA ?? "data")
 
@@ -17,6 +18,84 @@ export default class qqs {
          await fs.ensureFile(DATA_DIR + "/data.json")
       } catch (error) {
          logger.error(error.toString())
+      }
+   }
+
+   async getTopics(cache) {
+      const getTopicsFromSupabase = async () => {
+         try {
+            const supabase = createClient(process.env.GS_SUPAURL ?? "", process.env.GS_SUPAPUBLIC ?? "")
+            const { data, error } = await supabase.from('topics').select('topic,prompt')
+            if (error) {
+               throw error
+            } else {
+               return { status: 200, data: data }
+            }
+         } catch (err) {
+            const errmsg = err.hasOwnProperty('message') ? err.message : err.toString()
+            logger.error(errmsg)
+            return { status: 500, data: errmsg }
+         }
+      }
+
+      try {
+         const cacheFileName = path.join(DATA_DIR, 'topics.json')
+
+         // Step 1: Check if cache parameter is set to false
+         if (cache === 'false') {
+            logger.info(`cache parameter is set to false, fetching topics from Supabase`)
+            const rc = await getTopicsFromSupabase()
+            if (rc.status !== 200) {
+               return rc
+            } else {
+               logger.info(`topics cache created/updated`)
+               fs.writeJSONSync(cacheFileName, rc.data, { spaces: 2 })
+               return rc
+            }
+         }
+
+         // Step 2: Check if topics.json exists
+         if (!fs.existsSync(cacheFileName)) {
+            logger.info(`topics cache does not exist, fetching topics from Supabase`)
+            const rc = await getTopicsFromSupabase()
+            if (rc.status !== 200) {
+               return rc
+            } else {
+               logger.info(`topics cache created/updated`)
+               fs.writeJSONSync(cacheFileName, rc.data, { spaces: 2 })
+               return rc
+            }
+         }
+
+         // Step 3: Check if the file is older than the TTL
+         const stats = await fs.stat(cacheFileName)
+         const ageInMilliseconds = new Date() - stats.mtime
+         const ageInSeconds = Math.floor(ageInMilliseconds / 1000)
+         const ttl = parseInt(process.env.GS_TTL ?? '7200', 10) // Default TTL is 2 hours (7200 seconds)
+
+         if (ageInSeconds > ttl) {
+            logger.info(`topics cache is older than TTL, fetching topics from Supabase`)
+            const rc = await getTopicsFromSupabase()
+            if (rc.status !== 200) {
+               return rc
+            } else {
+               logger.info(`topics cache created/updated`)
+               fs.writeJSONSync(cacheFileName, rc.data, { spaces: 2 })
+               return rc
+            }
+         }
+
+         // Step 4: Return the cached topics.json
+         const data = fs.readJSONSync(cacheFileName)
+         if (data.length === 0) {
+            return { status: 404, data: "No topics found" }
+         } else {
+            return { status: 200, data: data }
+         }
+      } catch (err) {
+         const errmsg = err.hasOwnProperty('message') ? err.message : err.toString()
+         logger.error(errmsg)
+         return { status: 500, data: errmsg }
       }
    }
 
@@ -38,19 +117,6 @@ export default class qqs {
          const data = await fs.readJSONSync(DATA_DIR + `/${topic}.data.json`)
          if (data.length == 0) {
             return { status: 404, data: "No quotes found" }
-         } else {
-            return { status: 200, data: data }
-         }
-      } catch (error) {
-         return { status: 500, data: error.toString() }
-      }
-   }
-
-   async getTopics() {
-      try {
-         const data = await fs.readJSONSync(DATA_DIR + "/topics.json")
-         if (data.length == 0) {
-            return { status: 404, data: "No topics found" }
          } else {
             return { status: 200, data: data }
          }

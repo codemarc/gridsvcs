@@ -211,6 +211,11 @@ export function server() {
     *           type: string
     *           enum: [json, html, text]
     *         description: Optional format of the response (json, html or text)*
+    *       - in: query
+    *         name: cache
+    *         schema:
+    *           type: boolean
+    *         description: Optional boolean to enable or disable caching
     *
     *     responses:
     *       200:
@@ -225,8 +230,8 @@ export function server() {
    app.get("/v1/motd/topics", async (req, res) => {
 
       logger.info(`GET /v1/motd/topics`)
-      const result = await qq.getTopics()
-      const { format } = req.query
+      const { format, cache } = req.query
+      const result = await qq.getTopics(cache ?? true)
 
       if (format === "html") {
          res.setHeader("Content-Type", "text/html")
@@ -246,7 +251,11 @@ export function server() {
          }
       } else {
          res.setHeader("Content-Type", "application/json")
-         res.status(result.status).send(result.data)
+         if (result.status !== 200) {
+            res.status(result.status).send(result)
+         } else {
+            res.status(result.status).send(result.data)
+         }
       }
    })
 

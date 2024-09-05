@@ -1,30 +1,34 @@
 [
-   {
-      "topic": "general",
-      "prompt": "create a list of 50 \"message of the day\" quotes "
-   },
-   {
-      "topic": "got",
-      "prompt": "by characters from game of thrones or from house of the dragon"
-   },
-   {
-      "topic": "trump",
-      "prompt": "related to Donald Trump "
-   },
-   {
-      "topic": "politics",
-      "prompt": "related to American Politics from the past month"
-   },
-   {
-      "topic": "politics-mini",
-      "prompt": "related to American Politics from the past month"
-   },
-   {
-      "topic": "elon",
-      "prompt": "related to Elon Musk"
-   },
-   {
-      "topic": "kamala",
-      "prompt": "related to Kamala Harris"
-   }
+  {
+    "topic": "general",
+    "prompt": "create a list of 50 \"message of the day\" quotes"
+  },
+  {
+    "topic": "sopranos",
+    "prompt": "by characters from the sopranos"
+  },
+  {
+    "topic": "got",
+    "prompt": "by characters from game of thrones or from house of the dragon"
+  },
+  {
+    "topic": "elon",
+    "prompt": "related to Elon Musk"
+  },
+  {
+    "topic": "trump",
+    "prompt": "related to Donald Trump"
+  },
+  {
+    "topic": "kamala",
+    "prompt": "related to Kamala Harris"
+  },
+  {
+    "topic": "politics-mini",
+    "prompt": "related to American Politics from the past month"
+  },
+  {
+    "topic": "politics",
+    "prompt": "related to American Politics from the past month"
+  }
 ]
