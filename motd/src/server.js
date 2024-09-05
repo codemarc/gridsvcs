@@ -151,7 +151,7 @@ export function server() {
       if (format === "html") {
          res.setHeader("Content-Type", "text/html")
          if (result.status !== 200) {
-            console.error("Error", result)
+            logger.error(JSON.stringify(result))
             res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<p>quotes are not currentlly available</p>`))
          } else {
             res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<ol>${result.data.map(quote => `<li>${quote.message} - ${quote.author}</li>`).join("")}</ol>`))
@@ -160,7 +160,7 @@ export function server() {
       } else if (format === "text") {
          res.setHeader("Content-Type", "text/plain")
          if (result.status !== 200) {
-            console.error("Error", result)
+            logger.error(JSON.stringify(result))
             res.status(result.status).send(`Quotes ${topic ?? ""} \n\nquotes are not currentlly available\n\n`)
          } else {
             res.status(result.status).send(`  Quotes ${topic ?? ""} \n\n${result.data.map((quote, ndx) => `  ${ndx + 1}. ${quote.message} - ${quote.author}`).join("\n\n")}`)
@@ -169,7 +169,7 @@ export function server() {
       } else {
          res.setHeader("Content-Type", "application/json")
          if (result.status !== 200) {
-            console.error("Error", result)
+            logger.error(JSON.stringify(result))
             res.status(result.status).send({})
          } else {
             res.status(result.status).send(result.data)
@@ -236,7 +236,7 @@ export function server() {
       if (format === "html") {
          res.setHeader("Content-Type", "text/html")
          if (result.status !== 200) {
-            console.error("Error", result)
+            logger.error(JSON.stringify(result))
             res.status(result.status).send(HTMLSTART("Topics", `<p>topics are not currentlly available</p>`))
          } else {
             res.status(result.status).send(HTMLSTART("Topics", `<ol> ${result.data.map(item => `<li><a href="quotes?format=html&topic=${item.topic}">${item.topic} - ${item.prompt}</li>`).join("")}</ol > `))
@@ -244,7 +244,7 @@ export function server() {
       } else if (format === "text") {
          res.setHeader("Content-Type", "text/plain")
          if (result.status !== 200) {
-            console.error("Error", result)
+            logger.error(JSON.stringify(result))
             res.status(result.status).send(`  Topics\n\n  topics are not currently available\n\n`)
          } else {
             res.status(result.status).send(`  Topics\n\n${result.data.map((item, ndx) => `  ${ndx + 1}. ${item.topic} - ${item.prompt}`).join("\n\n")}`)
