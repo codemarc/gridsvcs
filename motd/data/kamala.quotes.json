@@ -1,0 +1,228 @@
+{
+   "id": 6,
+   "topic": "kamala",
+   "prompt": "related to Kamala Harris",
+   "promptliteral": false,
+   "model": "gpt-4o-mini-2024-07-18",
+   "message": [
+      {
+         "author": "Kamala Harris",
+         "message": "Dream with ambition, lead with conviction."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "You may be the first to do many things, but make sure you’re not the last."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Our unity is our strength."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "I will always fight for what is right."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Service is the rent we pay for living on this planet."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "When we lift each other up, we all rise."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "To tell the truth is to create change."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "We must stand firm in the face of injustice."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "There is power in our diversity."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Your voice is your power; use it."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Every problem is an opportunity to create solutions."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Empathy is the heart of leadership."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "We rise by lifting others."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Passion and purpose go hand in hand."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Courage is not the absence of fear, but the triumph over it."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "We are stronger together than we are alone."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Never underestimate your ability to make a difference."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Justice is what we're fighting for."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "History is made by those who dare to challenge the status quo."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "To be bold is to be brave."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Hope is not just a feeling; it’s an action."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Stand up for what you believe in, even if you stand alone."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Let us be the leaders we seek."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Our democracy demands participation."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "The future is ours to shape."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Stand firm in your beliefs and let your voice be heard."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Resilience is our greatest asset."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "A better future is possible when we come together."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Boldness is required to create change."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "A mother's love can change the world."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "The fight for justice is a lifelong endeavor."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Empowerment is contagious."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Inclusion is essential to democracy."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "We must be the change we wish to see."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Love and kindness are powerful tools."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Innovation requires courage to fail."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Our voices, when united, cannot be silenced."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Every child deserves a chance to dream."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "The road to progress is paved with determination."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Each of us has the power to create a brighter future."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Leadership is about serving others."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Young people inspire hope and change."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Together, we can break barriers."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Fight for what you believe in, and never back down."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Justice is the foundation of peace."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Failure is an opportunity for growth."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Words can inspire, and actions can change the world."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Know that your voice matters."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Let's work together for a better tomorrow."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "The time to act is now."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Empowerment breeds empowerment."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Today’s actions shape tomorrow’s realities."
+      },
+      {
+         "author": "Kamala Harris",
+         "message": "Be the change; the world needs you."
+      }
+   ],
+   "usage": {
+      "total_tokens": 1246,
+      "prompt_tokens": 38,
+      "completion_tokens": 1208
+   },
+   "modified": "2024-09-04T16:50:12.613394+00:00",
+   "dbu": "postgres"
+}

@@ -2,43 +2,62 @@ import OpenAI from "openai"
 import fs from "fs-extra"
 import path from "path"
 import logger from "./logger.js"
+import { createClient } from "@supabase/supabase-js"
 import _ from "lodash"
 
 const DATA_DIR = path.join(process.cwd(), process.env.GS_DATA ?? "data")
-const QUOTES_FILE = DATA_DIR + "/quotes.json"
-const DATA_FILE = DATA_DIR + "/data.json"
 const TOPICS_FILE = DATA_DIR + "/topics.json"
+const supabaseUrl = process.env.GS_SUPAURL ?? ""
+const supabaseRdKey = process.env.GS_SUPAPUBLIC ?? ""
+const supabaseUpKey = process.env.GS_SUPAUPDATE ?? ""
 
 export default class cqs {
 
-   async refreshQuotes(force = false, topic="") {
-      const quotesFile = (topic.length) ? DATA_DIR + `/${topic}.quotes.json` : QUOTES_FILE
-      const dataFile = (topic.length) ? DATA_DIR + `/${topic}.data.json` : DATA_FILE
+   async refreshQuotes(options = { force: false, database: false }, topic = "general") {
+      const { force, database } = options
+      const quotesFile = DATA_DIR + `/${topic}.quotes.json`
+      const dataFile = DATA_DIR + `/${topic}.data.json`
 
       try {
-         if (force || !fs.existsSync(quotesFile)) {
-            await this.fetchNewQuotes(topic)
+         if (force || database || !fs.existsSync(quotesFile)) {
+            await this.fetchNewQuotes(options, topic)
 
          } else {
             const fileStats = await fs.stat(quotesFile)
-            const fileAgeDays = Math.floor((Date.now() - fileStats.mtime.getTime()) / (1000 * 60 * 60 * 24))
+
+            // Default TTL is 1 day (86400 seconds)
+            const ttl = parseInt(process.env.GS_QUOTES_CACHE_TTL ?? '86400', 10)
+            const fileAgeDays = Math.floor((Date.now() - fileStats.mtime.getTime()) / (1000 * ttl))
+
+            // If the file is older than 30 days, fetch new quotes
+            const maxdays = parseInt(process.env.GS_QUOTES_MAX_DAYS ?? '30', 10)
             logger.info(`quotes file age is ${fileAgeDays} days`)
 
-            if (fileAgeDays > 30) {
+            if (fileAgeDays > maxdays) {
                await this.fetchNewQuotes(topic)
             }
          }
 
-         const jsondata = fs.readJSONSync(quotesFile)
+         const json = fs.readJSONSync(quotesFile)
+         const supabase = createClient(supabaseUrl, supabaseUpKey)
          try {
-            const quotes = JSON.parse(jsondata.choices[0].message.content)
-            fs.writeJSONSync(dataFile, quotes, { spaces: 3 })
+            if (database == false) {
+               const model = json.model
+               const usage = json.usage
+               const quotes = json.hasOwnProperty('message') ? json.message : JSON.parse(json.choices[0].content)
+               const { error } = await supabase.from('topics').update({ model: model, usage: usage, message: quotes }).eq('id', json.cid)
+               if (error) throw error
+               fs.writeJSONSync(dataFile, quotes, { spaces: 3 })
+            }
             return 0
-
          } catch (err) {
-            let messages = '' + jsondata.choices[0].message.content
+            const model = json.model
+            const usage = json.usage
+            let messages = '' + json.choices[0].message.content
             const qlist = '[' + messages.split('[')[1].split(']')[0] + ']'
             const quotes = JSON.parse(qlist)
+            const { error } = await supabase.from('topics').update({ model: model, usage: usage, message: quotes }).eq('id', json.cid)
+            if (error) throw error
             fs.writeJSONSync(dataFile, quotes, { spaces: 3 })
             return 0
          }
@@ -49,47 +68,53 @@ export default class cqs {
       }
    }
 
-   async fetchNewQuotes(topic = "") {
+   async fetchNewQuotes(options, topic) {
 
-      let tprompt=""
-      if(topic.length) {
-         let topics = fs.readJSONSync(TOPICS_FILE)
-         let ttopic = _.find(topics, (t) => {
-            if(t.topic == topic) {
-               return t
-            }
-         })
-         if(!ttopic) {
-            logger.error(`topic ${topic} not found`)
-            return
-         }
-         tprompt=ttopic.prompt
-         logger.info(`fetching new quotes ${tprompt}`)
-      } else {
-         logger.info(`fetching new quotes`)
+      const topics = fs.readJSONSync(TOPICS_FILE)
+      const t2refresh = _.find(topics, (t) => { if (t.topic == topic) { return t } })
+
+      if (!t2refresh) {
+         logger.error(`topic ${topic} not found`)
+         return
       }
 
-      const quotesFile = (topic.length) ? DATA_DIR + `/${topic}.quotes.json` : QUOTES_FILE
+      const { database } = options
+      if (options.database) {
+         const supabase = createClient(supabaseUrl, supabaseRdKey)
 
-      // model: "gpt-3.5-turbo",
-      // model: "gpt-4o-mini",
-      const model = "gpt-4o-mini"
+         const { data, error } = await supabase
+            .from('topics').select('*').eq('topic', topic)
+
+         if (error) {
+            logger.error("Error fetching quotes from database:", error)
+            throw error
+         }
+
+         const quotesFile = DATA_DIR + `/${topic}.quotes.json`
+         fs.writeJSONSync(quotesFile, data[0], { spaces: 3 })
+         logger.info(`Quotes file rebuilt from database for topic ${topic}`)
+         return;
+
+      }
+
+
+
+      const model = t2refresh.model ?? "gpt-4o-mini"
       logger.info(`fetching new quotes using model ${model}`)
 
-      const prompt = `create a list of 50 "message of the day" quotes ${tprompt??""} formatted as an array of json objects containing the fields message and author`
+      const prompt = t2refresh.promptliteral
+         ? t2refresh.t2refresh.prompt
+         : `create a list of 50 "message of the day" quotes ${t2refresh.prompt} formatted as an array of json objects containing the fields message and author`
+
       logger.info(`fetching new quotes using prompt ${prompt}`)
 
+      const quotesFile = DATA_DIR + `/${topic}.quotes.json`
+
       const openai = new OpenAI({ apiKey: process.env.GS_OPENAI_API_KEY })
-      const response = await openai.chat.completions.create({
-         model: model,
-         messages: [
-            {
-               role: "user",
-               content: [{type: "text",text: prompt,}]
-            },
-         ],
-         max_tokens: 2000,
-      })
+
+      const response = await openai.chat.completions.create({ model: model, messages: [{ role: "user", content: [{ type: "text", text: prompt, }] }], max_tokens: 2000 })
+      response.cid = t2refresh.id
+
       fs.writeJSONSync(quotesFile, response, { spaces: 3 })
    }
 

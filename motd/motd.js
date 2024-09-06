@@ -5,12 +5,11 @@ import fs from "fs-extra"
 import cqs from "./src/cqs.js"
 import qqs from "./src/qqs.js"
 import { server } from "./src/server.js"
-import { generate } from "build-number-generator"
 import packageJson from "./package.json" assert { type: "json" }
 const { name, version, description } = packageJson
 
 try {
-   let svc=fs.readJSONSync("build.num")
+   let build = fs.readJSONSync("build.num")
 
    // =======================================================================
    // cli processing
@@ -21,33 +20,18 @@ try {
       .description(description)
 
       // =====================================================================
-      .command("update", "generate a build number")
-      .action(async (args, options) => {
-         const qq = new qqs()
-         const quotes = (await qq.getQuotesMeta()).data
-         svc = Object.assign({ version: version, build: generate() }, quotes)
-         fs.writeJSONSync("build.num", svc, { spaces: 3 })
-         logger.info(`build number ${svc.build}`)
-      })
-
-      // =====================================================================
       .command("refresh", "updates all cached data")
       .argument("[topic]", "topic to refresh", prog.STRING)
       .option("-l, --list", "topics", false)
       .option("-t, --topics", "refresh topics list", false)
       .option("-f, --force", "force a cache update", false)
+      .option("-d, --database", "use database", false)
       .action(async (args, options) => {
          try {
-            // TODO: implement topic list refresh
-            if(options.topics) {
-               logger.info(`topics list is not implemented yet`)
-               return
-            }
+            const qq = new qqs()
+            const topics = await qq.getTopics(!options.topics)
 
-            let qq = new qqs()
-            const topics = await qq.getTopics()
-
-            if(options.list) {
+            if (options.list || options.topics) {
                console.log(`\ntopics:`)
                topics.data.forEach(element => {
                   console.log(`\t${element.topic}`)
@@ -66,7 +50,7 @@ try {
 
             let cq = new cqs()
             logger.info(`refreshing quotes ${options.force ? "forced" : ""}`)
-            cq.refreshQuotes(options.force,args.topic)
+            cq.refreshQuotes(options, args.topic)
             logger.info(`refreshing quotes completes`)
          } catch (e) {
             throw e
@@ -80,7 +64,7 @@ try {
          server()
       })
 
-   logger.info(`running ${name} cli v${version} build ${svc.build}`)
+   logger.info(`running ${name} cli v${version} build ${build}`)
    if (process.argv.length < 3) logger.info("no command issued")
 
    prog.parse(process.argv)

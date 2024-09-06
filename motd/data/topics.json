@@ -1,34 +1,305 @@
 [
   {
+    "id": 1,
     "topic": "general",
-    "prompt": "create a list of 50 \"message of the day\" quotes"
+    "prompt": "create a list of 50 \"message of the day\" quotes",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
   },
   {
-    "topic": "sopranos",
-    "prompt": "by characters from the sopranos"
-  },
-  {
+    "id": 3,
     "topic": "got",
-    "prompt": "by characters from game of thrones or from house of the dragon"
+    "prompt": "by characters from game of thrones or from house of the dragon",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
   },
   {
+    "id": 4,
     "topic": "elon",
-    "prompt": "related to Elon Musk"
+    "prompt": "related to Elon Musk",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
   },
   {
-    "topic": "trump",
-    "prompt": "related to Donald Trump"
-  },
-  {
+    "id": 6,
     "topic": "kamala",
-    "prompt": "related to Kamala Harris"
+    "prompt": "related to Kamala Harris",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
   },
   {
+    "id": 8,
     "topic": "politics-mini",
-    "prompt": "related to American Politics from the past month"
+    "prompt": "related to American Politics from the past month",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
   },
   {
+    "id": 7,
     "topic": "politics",
-    "prompt": "related to American Politics from the past month"
+    "prompt": "related to American Politics from the past month",
+    "promptliteral": false,
+    "model": "gpt-4o",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 2,
+    "topic": "sopranos",
+    "prompt": "by characters from the sopranos",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": {
+      "genai": "Here’s a list of 50 \"Message of the Day\" quotes inspired by characters from *The Sopranos*, formatted as an array of JSON objects. Each object contains a `message` and `author` field.\n\n```json\n[\n    {\"message\": \"Sometimes it’s good to be a little afraid. Fear keeps you sharp.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"In this life, you gotta find your own way, and that means making your own luck.\", \"author\": \"Christopher Moltisanti\"},\n    {\"message\": \"You can't make a deal with the devil and think you won’t pay for it.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"The family’s all that matters; everything else is just noise.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Always stay two steps ahead; it’s a jungle out there.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"A man is defined by his choices. Choose wisely.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"Respect is earned, not handed out.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Life’s a series of risks. Assess, then act.\", \"author\": \"Anthony Appropriately\"},\n    {\"message\": \"Never underestimate the power of loyalty.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Sometimes the best solution is to not act at all. Patience pays off.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"There’s no value in regrets; only lessons learned.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Don’t let emotions cloud your judgment. Stay cool.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Trust is the currency of any relationship.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"If you can’t laugh at yourself, you’ll get taken for a ride.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Sometimes you just gotta roll with the punches.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Always look out for number one, but don’t forget those who helped you along the way.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"You can’t change the past, but you can shape your future.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Family is everything, but it's also a double-edged sword.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Everyone’s got a plan ‘til they get punched in the mouth.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Having the right connections can open doors.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"Never show weakness; it’s seen as an invitation.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Stay true to yourself; you can’t please everyone.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"In this game, loyalty comes with a price.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Sometimes the right thing to do is the hardest.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Always have a backup plan; life is unpredictable.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Not every battle is worth fighting; pick your wars.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"You can lose everything, but you can’t lose your pride.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"A wise guy knows the power of silence.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Don't count on tomorrow; seize today.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Your reputation is all you really have; protect it.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Face your demons head-on; the longer you wait, the worse they get.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Keep your friends close and your enemies closer.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"A good strategist knows when to hold back.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"Life is about choices; choose the path that brings you peace.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Never be afraid to ask for help; strength lies in community.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"The mind can be your greatest ally or worst enemy.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Every setback is an opportunity in disguise.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Surround yourself with good people, and you’ll go far.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Beware of false friends; they can cause the most harm.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"A true leader knows when to follow.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Integrity is what you do when no one is watching.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Keep your enemies guessing; let them think they have the upper hand.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Every loan comes with interest; be mindful of what you owe.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Remember, it’s not personal; it’s business.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"A good night's sleep can always bring clarity.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Believe in yourself; confidence is key.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Always pay your debts; it earns you respect.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"You’re never truly out of the game until you say you are.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Sometimes you gotta break a few eggs to make an omelet.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"A wise guy never forgets his roots; they keep you grounded.\", \"author\": \"Silvio Dante\"}\n]\n```\n\nFeel free to adjust any quotes to better match your needs or the themes you want to emphasize!"
+    },
+    "usage": {
+      "total_tokens": 1427,
+      "prompt_tokens": 40,
+      "completion_tokens": 1387
+    },
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 5,
+    "topic": "trump",
+    "prompt": "related to Donald Trump",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": [
+      {
+        "author": "Donald Trump",
+        "message": "Sometimes by losing a battle you find a new way to win the war."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "I like thinking big. I always have. To me it’s very simple: If you’re going to be thinking anyway, you might as well think big."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "The better your case, the better your chance. You should always strive to be the best."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "What separates the winners from the losers is how a person reacts to each new twist of fate."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You have to think anyway, so why not think big?"
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Without passion, you don’t have energy. Without energy, you have nothing."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Sometimes you have to take a leap of faith, and that’s how you grow."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "If you can’t stand the heat, don’t start a fire."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "I will build a great wall, and nobody builds walls better than me."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You don’t have to be smart to be successful. You just have to be creative."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Success isn’t just about what you accomplish in your life; it’s about what you inspire others to do."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Every day is a new opportunity to make a positive impact."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Don’t be afraid to give up the good to go for the great."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Sometimes your best investments are the ones you don’t make."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Leadership is not about the next election, it’s about the next generation."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "I was always told that you should never make decisions when you’re angry."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "An effective leader is one who can understand and manage emotions."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Winning is a lot more fun than losing."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You have to be able to take criticism and keep going forward."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "In the end, you’re judged by the people you surround yourself with."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Tough times don’t last, but tough people do."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Great things in business are never done by one person; they’re done by a team."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Doubt is a killer. You just have to know who you are and what you stand for."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Sometimes the worst things that happen to you, the way you respond to them, makes you who you are."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "The most beautiful thing you can wear is confidence."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "It's not whether you are right or wrong, but how much money you make when you're right and how much you lose when you're wrong."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Opportunities are usually disguised as hard work, so most people don’t recognize them."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Focus on the future, not the past."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "I will never give in. I will never back down."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You have to be willing to take risks if you want to achieve great things."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "If people are not calling you crazy, you are not thinking big enough."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "The more you give, the more you get."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Your time is limited, don’t waste it living someone else’s life."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You miss 100% of the shots you don’t take."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Be brave. Be bold. Make it happen."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Every setback is a setup for a comeback."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "There is no such thing as an easy job. You need to put in the work."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Successful people ask better questions."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Always be looking for ways to improve yourself and your life."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Patience is not simply the ability to wait - it’s how we behave while we’re waiting."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "The key to success is to start before you are ready."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Dream big and dare to fail."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "If you don’t have a competitive advantage, don’t compete."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Your greatest accomplishment is what you inspire others to do."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You can’t build a reputation on what you are going to do."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Whatever you are, be a good one."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "Success is how high you bounce when you hit bottom."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "A leader takes people where they want to go. A great leader takes people where they don’t necessarily want to go, but ought to be."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "If you don’t like it, change it. If you can’t change it, change your attitude."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "You can’t let your failures define you. You have to let your failures teach you."
+      },
+      {
+        "author": "Donald Trump",
+        "message": "It’s not about the cards you’re dealt, but how you play the hand."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1464,
+      "prompt_tokens": 37,
+      "completion_tokens": 1427
+    },
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
   }
 ]

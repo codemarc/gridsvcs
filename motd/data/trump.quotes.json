@@ -1,23 +1,220 @@
 {
-   "id": "chatcmpl-9rtdv4FpHhRJkgheW8gD3zZu5XKXU",
-   "object": "chat.completion",
-   "created": 1722632303,
+   "id": 5,
+   "topic": "trump",
+   "prompt": "related to Donald Trump",
+   "promptliteral": false,
    "model": "gpt-4o-mini-2024-07-18",
-   "choices": [
+   "message": [
       {
-         "index": 0,
-         "message": {
-            "role": "assistant",
-            "content": "Sure! Here's a list of 50 \"message of the day\" quotes related to Donald Trump, formatted as an array of JSON objects with `message` and `author` fields:\n\n```json\n[\n    {\"message\": \"The art of the deal is mastering the art of negotiation.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I will be the greatest jobs president that God ever created.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Sometimes by losing a battle you find a new way to win the war.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"What separates the winners from the losers is how a person reacts to each new twist of fate.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"You have to think anyway, so why not think big?\", \"author\": \"Donald Trump\"},\n    {\"message\": \"If you're going to be thinking anyway, think big.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I like thinking big. If you're going to be thinking anything, you might as well think big.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I have a great relationship with the Blacks. I’ve always had a great relationship with the Blacks.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"We will make America great again!\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Nobody builds walls better than me, believe me.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I’m really rich.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"The stronger and more powerful we become, the more we have to be careful.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"It’s not whether you win or lose, but how you play the game.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Leadership is an action, not a position.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"You have to be willing to take risks if you want to succeed.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"The future belongs to the dreamers.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I think we have a tremendous opportunity to grow and make this country greater.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Failure is not an option.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"The media is a powerful force.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Make America great again was my promise, and I intend to keep it.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"America is the greatest country in the world.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Courage is not the absence of fear, but the triumph over it.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I will harness the creativity of the American people.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Together, we can do anything.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Never back down from a challenge.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Focus on solutions, not problems.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Success is not just about what you accomplish in your life, it's about what you inspire others to do.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Dream big, work hard.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"I am committed to building a better future for every American.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"America's best days are ahead.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"You have to play the game to win it.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Innovation distinguishes between a leader and a follower.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"We have to be tough, strong, and really, really smart.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Optimism is a key to success.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Believe in yourself and in your vision.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Work hard and never give up.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"True success is about how much you give back.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Respect everyone, but fear no one.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Winners never quit and quitters never win.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Be a warrior, not a worrier.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Success is the only option.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Don't just talk about change, be the change!\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Empower yourself and empower others.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Don't let anyone steal your dreams.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"It’s time to stand up and speak out!\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Hard work beats talent when talent doesn’t work hard.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"United we stand, divided we fall.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Challenges are what make life interesting; overcoming them is what makes life meaningful.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"Your limits are only in your mind.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"You are capable of amazing things.\", \"author\": \"Donald Trump\"},\n    {\"message\": \"The best way to predict the future is to create it.\", \"author\": \"Donald Trump\"}\n]\n```\n\nFeel free to modify any of the messages as necessary!"
-         },
-         "logprobs": null,
-         "finish_reason": "stop"
+         "author": "Donald Trump",
+         "message": "Make America great again!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We will build a great wall!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Fake news is the enemy of the people."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I will never back down."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "America first!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We are winning so much, you will be amazed."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Our country is doing so well!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I am your voice."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Together we will make America safe again!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We need to drain the swamp."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I will fight for you."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Success is about the mindset."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Only I can fix it."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "The best is yet to come!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I know more about trade than anybody."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "America will always be a great country!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Job creation is my top priority."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We will not let our country disappear."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Believe me, we are winning!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Bigger, better, faster, stronger!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We are transforming the American economy."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Together, we are unstoppable!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "The American Dream is back!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We are going to bring back jobs!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Our military will be the strongest."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We will not let the American worker down."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Energy independence is essential."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I will protect your Second Amendment rights."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Tax cuts will help the middle class."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Our country will be a beacon of hope."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We will defend our borders."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "The future belongs to the brave."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We are one nation under God."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "America is a land of opportunity."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Let's make our country great!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Winning is a habit."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We will stand up for our rights!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Incredible things are happening!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I see great things ahead."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We will make history together!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Our best days are yet to come!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I will fight for the forgotten man."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Unity is strength."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Every day is a new opportunity!"
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We are turning this ship around."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "The American people deserve better."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Hard work pays off."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "We are creating a new wave of prosperity."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "I'm honored to serve you."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Courage and determination lead to success."
+      },
+      {
+         "author": "Donald Trump",
+         "message": "Let’s create a brighter future together!"
       }
    ],
    "usage": {
+      "total_tokens": 1051,
       "prompt_tokens": 37,
-      "completion_tokens": 1211,
-      "total_tokens": 1248
+      "completion_tokens": 1014
    },
-   "system_fingerprint": "fp_9b0abffe81"
+   "modified": "2024-09-04T16:50:12.613394+00:00",
+   "dbu": "postgres"
 }

@@ -1,6 +1,8 @@
 import fs from "fs-extra"
 import logger from "./logger.js";
 import path from "path"
+import packageJson from "../package.json" assert { type: "json" }
+const { name, version, description } = packageJson
 import { createClient } from "@supabase/supabase-js"
 
 const DATA_DIR = path.join(process.cwd(), process.env.GS_DATA ?? "data")
@@ -15,7 +17,6 @@ export default class qqs {
       try {
          logger.info(`data directory set to ${DATA_DIR}`)
          await fs.ensureDir(DATA_DIR)
-         await fs.ensureFile(DATA_DIR + "/data.json")
       } catch (error) {
          logger.error(error.toString())
       }
@@ -25,7 +26,7 @@ export default class qqs {
       const getTopicsFromSupabase = async () => {
          try {
             const supabase = createClient(process.env.GS_SUPAURL ?? "", process.env.GS_SUPAPUBLIC ?? "")
-            const { data, error } = await supabase.from('topics').select('topic,prompt')
+            const { data, error } = await supabase.from('topics').select('*')
             if (error) {
                throw error
             } else {
@@ -42,7 +43,7 @@ export default class qqs {
          const cacheFileName = path.join(DATA_DIR, 'topics.json')
 
          // Step 1: Check if cache parameter is set to false
-         if (cache === 'false') {
+         if (cache.toString() === 'false') {
             logger.info(`cache parameter is set to false, fetching topics from Supabase`)
             const rc = await getTopicsFromSupabase()
             if (rc.status !== 200) {
@@ -71,7 +72,9 @@ export default class qqs {
          const stats = await fs.stat(cacheFileName)
          const ageInMilliseconds = new Date() - stats.mtime
          const ageInSeconds = Math.floor(ageInMilliseconds / 1000)
-         const ttl = parseInt(process.env.GS_CACHETTL ?? '7200', 10) // Default TTL is 2 hours (7200 seconds)
+
+         // Default TTL is 2 hours (7200 seconds)
+         const ttl = parseInt(process.env.GS_TOPICS_CACHE_TTL ?? '7200', 10)
 
          if (ageInSeconds > ttl) {
             logger.info(`topics cache is older than TTL, fetching topics from Supabase`)
@@ -99,20 +102,7 @@ export default class qqs {
       }
    }
 
-   async getAllQuotes() {
-      try {
-         const data = await fs.readJSONSync(DATA_DIR + "/data.json")
-         if (data.length == 0) {
-            return { status: 404, data: "No quotes found" }
-         } else {
-            return { status: 200, data: data }
-         }
-      } catch (error) {
-         return { status: 500, data: error.toString() }
-      }
-   }
-
-   async getQuotesByTopic(topic) {
+   async getQuotes(topic = "general") {
       try {
          const data = await fs.readJSONSync(DATA_DIR + `/${topic}.data.json`)
          if (data.length == 0) {
@@ -121,51 +111,27 @@ export default class qqs {
             return { status: 200, data: data }
          }
       } catch (error) {
-         return { status: 500, data: error.toString() }
-      }
-   }
-
-   async getQuotesMeta() {
-      try {
-         const data = await this.getFileAge()
-         if (data.length == 0) {
-            return { status: 404, data: "No quotes found" }
+         if (error.code === 'ENOENT') {
+            return { status: 404, data: `No quotes found for topic ${topic}` }
          } else {
-            return { status: 200, data: data }
+            return { status: 500, data: error.toString() }
          }
-      } catch (error) {
-         return { status: 500, data: error.toString() }
       }
    }
 
-   async getFileAge() {
+   async getStatus() {
       try {
+         const supabase = createClient(process.env.GS_SUPAURL ?? "", process.env.GS_SUPAPUBLIC ?? "")
+         const { data, error } = await supabase.from('topics').select('topic,model,usage')
 
-         const age = async (fn) => {
-            const stats = await fs.stat(fn)
-            const lastModified = stats.mtime
-            const now = new Date()
-            const ageInMilliseconds = now - lastModified
-            const ageInSeconds = Math.floor(ageInMilliseconds / 1000)
-            const ageInMinutes = Math.floor(ageInSeconds / 60)
-            const ageInHours = Math.floor(ageInMinutes / 60)
-            const ageInDays = Math.floor(ageInHours / 24)
-            return `${ageInDays} days, ${ageInHours % 24} hours, ${ageInMinutes % 60} minutes, and ${ageInSeconds % 60} seconds.`
+         let rc = {
+            version: version,
+            build: "" + fs.readJSONSync("build.num"),
+            topics: data ?? error
          }
-
-         const jsondata = fs.readJSONSync(DATA_DIR + "/quotes.json")
-         const data = await fs.readJSONSync(DATA_DIR + "/data.json")
-
-         return {
-            model: jsondata.model,
-            usage: jsondata.usage,
-            count: data.length,
-            cache: await age(DATA_DIR+'/data.json'),
-            genai: await age(DATA_DIR+'/quotes.json')
-         }
-
-      } catch (error) {
-         return { status: 500, data: error.toString() }
+         return { status: 200, data: rc }
+      } catch (err) {
+         return { status: 500, data: err.toString() }
       }
    }
 }

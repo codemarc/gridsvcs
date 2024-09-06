@@ -1,13 +1,1 @@
-{
-   "version": "0.0.6",
-   "build": "240826362",
-   "model": "gpt-4o-mini-2024-07-18",
-   "usage": {
-      "prompt_tokens": 33,
-      "completion_tokens": 1436,
-      "total_tokens": 1469
-   },
-   "count": 52,
-   "cache": "22 days, 1 hours, 10 minutes, and 47 seconds.",
-   "genai": "31 days, 18 hours, 33 minutes, and 24 seconds."
-}
+240906296

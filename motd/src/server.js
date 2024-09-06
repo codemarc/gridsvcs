@@ -42,7 +42,7 @@ export function server() {
     * /v1/motd/status:
     *   get:
     *     tags: [motd]
-    *     summary: Status and metrics for the motd service
+    *     summary: Status for the motd service
     *     responses:
     *       200:
     *         description: The message of the day service stats
@@ -51,37 +51,95 @@ export function server() {
     *             schema:
     *               type: object
     *               properties:
+    *                 ts:
+    *                   type: string
+    *                   example: "2023-07-18T18:40:00.000Z"
     *                 version:
     *                   type: string
     *                   example: "0.0.0"
     *                 build:
     *                   type: string
     *                   example: "240801000"
-    *                 model:
+    *                 topics:
+    *                   type: array
+    *                   items:
+    *                     type: object
+    *                     properties:
+    *                       topic:
+    *                         type: string
+    *                         example: "general"
+    *                       model:
+    *                         type: string
+    *                         example: "gpt-4o-mini"
+    *                       usage:
+    *                         type: object
+    *                         properties:
+    *                           prompt_tokens:
+    *                             type: integer
+    *                             example: 33
+    *                           completion_tokens:
+    *                             type: integer
+    *                             example: 1436
+    *                           total_tokens:
+    *                             type: integer
+    *                             example: 1469
+    *                         nullable: true
+    *       500:
+    *         description: Internal server error
+    *         content:
+    *           application/json:
+    *             schema:
+    *               type: object
+    *               properties:
+    *                 status:
+    *                   type: integer
+    *                   example: 500
+    *                 data:
     *                   type: string
-    *                   example: "gpt-4o-mini-2024-07-18"
-    *                 usage:
-    *                   type: object
-    *                   properties:
-    *                     prompt_tokens:
-    *                       type: integer
-    *                       example: 33
-    *                     completion_tokens:
-    *                       type: integer
-    *                       example: 1436
-    *                     total_tokens:
-    *                       type: integer
-    *                       example: 1469
-    *                 cache:
-    *                   type: string
-    *                   example: "0 days, 17 hours, 48 minutes, and 9 seconds."
-    *                 genai:
-    *                   type: string
-    *                   example: "0 days, 18 hours, 36 minutes, and 40 seconds."
+    *                   example: "Error: something is amis"
+    *
     */
    app.get("/v1/motd/status", async (req, res) => {
-      let svc = fs.readJSONSync("build.num")
-      res.status(200).send(svc)
+      logger.info(`GET /v1/motd/status`)
+      const { format } = req.query
+      const now = () => 'status as of ' + new Date().toLocaleString()
+      const result = await qq.getStatus()
+
+      if (format === "html") {
+         res.setHeader("Content-Type", "text/html")
+         if (result.status !== 200) {
+            logger.error(JSON.stringify(result))
+            if (result.hasOwnProperty("data")) {
+               res.status(result.status).send(HTMLSTART(now(), `<p>${result.data}</p>`))
+            } else {
+               res.status(result.status).send(HTMLSTART(now(), `<p>status is currently unavailable</p>`))
+            }
+         } else {
+            res.status(result.status).send(HTMLSTART(now(), `<p>${JSON.stringify(result.data)}</p>`))
+         }
+
+      } else if (format === "text") {
+         res.setHeader("Content-Type", "text/plain")
+         if (result.status !== 200) {
+            logger.error(JSON.stringify(result))
+            if (result.hasOwnProperty("data")) {
+               res.status(result.status).send(result.data)
+            } else {
+               res.status(result.status).send(`  ${now()} \n\nstatus is currently unavailable\n\n`)
+            }
+         } else {
+            res.status(result.status).send(`  ${now()} ${JSON.stringify(result.data)}\n\n`)
+         }
+
+      } else {
+         res.setHeader("Content-Type", "application/json")
+         if (result.status !== 200) {
+            logger.error(JSON.stringify(result))
+            res.status(result.status).send(result)
+         } else {
+            res.status(result.status).send(Object.assign({ ts: new Date() }, result.data))
+         }
+      }
    })
 
    // Read all items using CQRS pattern
@@ -146,13 +204,17 @@ export function server() {
    app.get("/v1/motd/quotes", async (req, res) => {
       logger.info(`GET /v1/motd/quotes`)
       const { topic, format } = req.query
-      const result = (topic && topic !== "general") ? await qq.getQuotesByTopic(topic) : await qq.getAllQuotes()
+      const result = await qq.getQuotes(topic)
 
       if (format === "html") {
          res.setHeader("Content-Type", "text/html")
          if (result.status !== 200) {
             logger.error(JSON.stringify(result))
-            res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<p>quotes are not currentlly available</p>`))
+            if (result.hasOwnProperty("data")) {
+               res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<p>${result.data}</p>`))
+            } else {
+               res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<p>quotes are not currently available</p>`))
+            }
          } else {
             res.status(result.status).send(HTMLSTART("Quotes " + (topic ?? ""), `<ol>${result.data.map(quote => `<li>${quote.message} - ${quote.author}</li>`).join("")}</ol>`))
          }
@@ -161,7 +223,11 @@ export function server() {
          res.setHeader("Content-Type", "text/plain")
          if (result.status !== 200) {
             logger.error(JSON.stringify(result))
-            res.status(result.status).send(`Quotes ${topic ?? ""} \n\nquotes are not currentlly available\n\n`)
+            if (result.hasOwnProperty("data")) {
+               res.status(result.status).send(result.data)
+            } else {
+               res.status(result.status).send(`Quotes ${topic ?? ""} \n\nquotes are not currently available\n\n`)
+            }
          } else {
             res.status(result.status).send(`  Quotes ${topic ?? ""} \n\n${result.data.map((quote, ndx) => `  ${ndx + 1}. ${quote.message} - ${quote.author}`).join("\n\n")}`)
          }
@@ -170,7 +236,7 @@ export function server() {
          res.setHeader("Content-Type", "application/json")
          if (result.status !== 200) {
             logger.error(JSON.stringify(result))
-            res.status(result.status).send({})
+            res.status(result.status).send(result)
          } else {
             res.status(result.status).send(result.data)
          }
@@ -231,13 +297,26 @@ export function server() {
 
       logger.info(`GET /v1/motd/topics`)
       const { format, cache } = req.query
-      const result = await qq.getTopics(cache ?? true)
+      const fullresult = await qq.getTopics(cache ?? true)
+
+      // Transform fullresult
+      const result = {
+         status: fullresult.status,
+         data: fullresult.data.map(t => ({
+            topic: t.topic,
+            prompt: t.prompt
+         }))
+      }
 
       if (format === "html") {
          res.setHeader("Content-Type", "text/html")
          if (result.status !== 200) {
             logger.error(JSON.stringify(result))
-            res.status(result.status).send(HTMLSTART("Topics", `<p>topics are not currentlly available</p>`))
+            if (result.hasOwnProperty("data")) {
+               res.status(result.status).send(HTMLSTART("Topics", `<p>${result.data}</p>`))
+            } else {
+               res.status(result.status).send(HTMLSTART("Topics", `<p>topics are currently unavailable</p>`))
+            }
          } else {
             res.status(result.status).send(HTMLSTART("Topics", `<ol> ${result.data.map(item => `<li><a href="quotes?format=html&topic=${item.topic}">${item.topic} - ${item.prompt}</li>`).join("")}</ol > `))
          }
@@ -245,7 +324,11 @@ export function server() {
          res.setHeader("Content-Type", "text/plain")
          if (result.status !== 200) {
             logger.error(JSON.stringify(result))
-            res.status(result.status).send(`  Topics\n\n  topics are not currently available\n\n`)
+            if (result.hasOwnProperty("data")) {
+               res.status(result.status).send(result.data)
+            } else {
+               res.status(result.status).send(`  Topics\n\n  topics are currently unavailable\n\n`)
+            }
          } else {
             res.status(result.status).send(`  Topics\n\n${result.data.map((item, ndx) => `  ${ndx + 1}. ${item.topic} - ${item.prompt}`).join("\n\n")}`)
          }

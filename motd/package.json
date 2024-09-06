@@ -10,9 +10,9 @@
    "scripts": {
       "dev": "nodemon --env-file=.env ./motd.js server",
       "server": "node --no-warnings ./motd.js server",
-      "motd": "node --no-warnings ./motd.js ",
+      "motd": "node --no-warnings --env-file=.env ./motd.js ",
       "update": "yarn version --patch",
-      "build": "node ./motd.js update",
+      "build": "npx buildnumgen > build.num",
       "docker": "docker compose --env-file=.env run cli"
    },
    "license": "MIT",
