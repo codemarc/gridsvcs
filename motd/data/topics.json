@@ -5,8 +5,221 @@
     "prompt": "create a list of 50 \"message of the day\" quotes",
     "promptliteral": false,
     "model": "gpt-4o-mini",
-    "message": null,
-    "usage": null,
+    "message": [
+      {
+        "author": "Theodore Roosevelt",
+        "message": "Believe you can and you're halfway there."
+      },
+      {
+        "author": "Steve Jobs",
+        "message": "The only way to do great work is to love what you do."
+      },
+      {
+        "author": "William James",
+        "message": "Act as if what you do makes a difference. It does."
+      },
+      {
+        "author": "Roy T. Bennett",
+        "message": "Success is not how high you have climbed, but how you make a positive difference to the world."
+      },
+      {
+        "author": "Zig Ziglar",
+        "message": "What you get by achieving your goals is not as important as what you become by achieving your goals."
+      },
+      {
+        "author": "C.S. Lewis",
+        "message": "You are never too old to set another goal or to dream a new dream."
+      },
+      {
+        "author": "Eleanor Roosevelt",
+        "message": "The future belongs to those who believe in the beauty of their dreams."
+      },
+      {
+        "author": "Wayne Gretzky",
+        "message": "You miss 100% of the shots you don’t take."
+      },
+      {
+        "author": "George Eliot",
+        "message": "It is never too late to be what you might have been."
+      },
+      {
+        "author": "Sam Levenson",
+        "message": "Don’t watch the clock; do what it does. Keep going."
+      },
+      {
+        "author": "Peter Drucker",
+        "message": "The best way to predict the future is to create it."
+      },
+      {
+        "author": "Steve Jobs",
+        "message": "Your time is limited, don’t waste it living someone else’s life."
+      },
+      {
+        "author": "Walt Disney",
+        "message": "If you can dream it, you can do it."
+      },
+      {
+        "author": "Dalai Lama",
+        "message": "Happiness is not something ready made. It comes from your own actions."
+      },
+      {
+        "author": "Theodore Roosevelt",
+        "message": "Do what you can, with what you have, where you are."
+      },
+      {
+        "author": "Henry Ford",
+        "message": "Whether you think you can or you think you can’t, you’re right."
+      },
+      {
+        "author": "Franklin D. Roosevelt",
+        "message": "The only limit to our realization of tomorrow will be our doubts of today."
+      },
+      {
+        "author": "Henry David Thoreau",
+        "message": "Success usually comes to those who are too busy to be looking for it."
+      },
+      {
+        "author": "Unknown",
+        "message": "The harder you work for something, the greater you’ll feel when you achieve it."
+      },
+      {
+        "author": "Norman Vaughan",
+        "message": "Dream big and dare to fail."
+      },
+      {
+        "author": "Vince Lombardi",
+        "message": "It’s not whether you get knocked down, it’s whether you get up."
+      },
+      {
+        "author": "Ralph Waldo Emerson",
+        "message": "The only person you are destined to become is the person you decide to be."
+      },
+      {
+        "author": "Roy T. Bennett",
+        "message": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart."
+      },
+      {
+        "author": "Walt Whitman",
+        "message": "Keep your face always toward the sunshine—and shadows will fall behind you."
+      },
+      {
+        "author": "Brian Tracy",
+        "message": "You have within you right now, everything you need to deal with whatever the world can throw at you."
+      },
+      {
+        "author": "Chris Grosser",
+        "message": "Opportunities don't happen, you create them."
+      },
+      {
+        "author": "Robert Collier",
+        "message": "Success is the sum of small efforts, repeated day in and day out."
+      },
+      {
+        "author": "Muhammad Ali",
+        "message": "Don’t count the days, make the days count."
+      },
+      {
+        "author": "A.A. Milne",
+        "message": "You are braver than you believe, stronger than you seem, and smarter than you think."
+      },
+      {
+        "author": "Walt Disney",
+        "message": "The way to get started is to quit talking and begin doing."
+      },
+      {
+        "author": "Jordan Belfort",
+        "message": "The only thing standing between you and your goal is the story you keep telling yourself as to why you can’t achieve it."
+      },
+      {
+        "author": "Theodore Roosevelt",
+        "message": "Keep your eyes on the stars, and your feet on the ground."
+      },
+      {
+        "author": "Maya Angelou",
+        "message": "You can’t use up creativity. The more you use, the more you have."
+      },
+      {
+        "author": "Booker T. Washington",
+        "message": "If you want to lift yourself up, lift up someone else."
+      },
+      {
+        "author": "Tony Robbins",
+        "message": "Setting goals is the first step in turning the invisible into the visible."
+      },
+      {
+        "author": "Bo Bennett",
+        "message": "Success is not in what you have, but who you are."
+      },
+      {
+        "author": "Robert H. Schuller",
+        "message": "Today’s accomplishments were yesterday’s impossibilities."
+      },
+      {
+        "author": "Ralph Waldo Emerson",
+        "message": "What lies behind us and what lies before us are tiny matters compared to what lies within us."
+      },
+      {
+        "author": "Zig Ziglar",
+        "message": "You don’t have to be great to start, but you have to start to be great."
+      },
+      {
+        "author": "Bruce Lee",
+        "message": "A goal is not always meant to be reached; it often serves simply as something to aim at."
+      },
+      {
+        "author": "Anonymous",
+        "message": "If you want to achieve greatness stop asking for permission."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Push yourself, because no one else is going to do it for you."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Great things never come from comfort zones."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Dream it. Wish it. Do it."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Success doesn’t just find you. You have to go out and get it."
+      },
+      {
+        "author": "Anonymous",
+        "message": "The harder you work for something, the greater you’ll feel when you achieve it."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Dream bigger. Do bigger."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Don’t stop when you’re tired. Stop when you’re done."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Wake up with determination. Go to bed with satisfaction."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Do something today that your future self will thank you for."
+      },
+      {
+        "author": "Anonymous",
+        "message": "Little things make big days."
+      },
+      {
+        "author": "Anonymous",
+        "message": "It’s going to be hard, but hard does not mean impossible."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1496,
+      "prompt_tokens": 46,
+      "completion_tokens": 1450
+    },
     "modified": "2024-09-04T16:50:12.613394+00:00",
     "dbu": "postgres"
   },
@@ -16,52 +229,209 @@
     "prompt": "by characters from game of thrones or from house of the dragon",
     "promptliteral": false,
     "model": "gpt-4o-mini",
-    "message": null,
-    "usage": null,
-    "modified": "2024-09-04T16:50:12.613394+00:00",
-    "dbu": "postgres"
-  },
-  {
-    "id": 4,
-    "topic": "elon",
-    "prompt": "related to Elon Musk",
-    "promptliteral": false,
-    "model": "gpt-4o-mini",
-    "message": null,
-    "usage": null,
-    "modified": "2024-09-04T16:50:12.613394+00:00",
-    "dbu": "postgres"
-  },
-  {
-    "id": 6,
-    "topic": "kamala",
-    "prompt": "related to Kamala Harris",
-    "promptliteral": false,
-    "model": "gpt-4o-mini",
-    "message": null,
-    "usage": null,
-    "modified": "2024-09-04T16:50:12.613394+00:00",
-    "dbu": "postgres"
-  },
-  {
-    "id": 8,
-    "topic": "politics-mini",
-    "prompt": "related to American Politics from the past month",
-    "promptliteral": false,
-    "model": "gpt-4o-mini",
-    "message": null,
-    "usage": null,
-    "modified": "2024-09-04T16:50:12.613394+00:00",
-    "dbu": "postgres"
-  },
-  {
-    "id": 7,
-    "topic": "politics",
-    "prompt": "related to American Politics from the past month",
-    "promptliteral": false,
-    "model": "gpt-4o",
-    "message": null,
-    "usage": null,
+    "message": [
+      {
+        "author": "Ned Stark",
+        "message": "When the snows fall and the white winds blow, the lone wolf dies but the pack survives."
+      },
+      {
+        "author": "Tyrion Lannister",
+        "message": "A mind needs books like a sword needs a whetstone."
+      },
+      {
+        "author": "Petyr Baelish",
+        "message": "Chaos isn’t a pit. Chaos is a ladder."
+      },
+      {
+        "author": "Jaime Lannister",
+        "message": "The things I do for love."
+      },
+      {
+        "author": "Bran Stark",
+        "message": "The greatest war is not against your enemies, but within yourself."
+      },
+      {
+        "author": "House Targaryen",
+        "message": "Fire and Blood."
+      },
+      {
+        "author": "Tywin Lannister",
+        "message": "A lion does not concern himself with the opinion of sheep."
+      },
+      {
+        "author": "Ned Stark",
+        "message": "Winter is Coming."
+      },
+      {
+        "author": "Brynden Tully",
+        "message": "The past is a ghost. The future is a dream. All we ever have is now."
+      },
+      {
+        "author": "Tyrion Lannister",
+        "message": "I drink and I know things."
+      },
+      {
+        "author": "Jon Snow",
+        "message": "There is only one war that matters. The Great War. And it is here."
+      },
+      {
+        "author": "Cersei Lannister",
+        "message": "You win or you die. There is no middle ground."
+      },
+      {
+        "author": "Robb Stark",
+        "message": "Every man must die, but not every man truly lives."
+      },
+      {
+        "author": "The Ironborn",
+        "message": "What is dead may never die."
+      },
+      {
+        "author": "Petyr Baelish",
+        "message": "Knowledge is power."
+      },
+      {
+        "author": "Daenerys Targaryen",
+        "message": "To be a dragon, you must have fire in your blood."
+      },
+      {
+        "author": "Sansa Stark",
+        "message": "We are all human. We all bleed."
+      },
+      {
+        "author": "Arya Stark",
+        "message": "Fear cuts deeper than swords."
+      },
+      {
+        "author": "Melisandre",
+        "message": "The night is dark and full of terrors."
+      },
+      {
+        "author": "Syrio Forel",
+        "message": "Your bliss is in your truth. Find it."
+      },
+      {
+        "author": "Ygritte",
+        "message": "You know nothing, Jon Snow."
+      },
+      {
+        "author": "Varys",
+        "message": "Power resides where men believe it resides."
+      },
+      {
+        "author": "Olenna Tyrell",
+        "message": "You serve the realm, you serve the king, you serve your family."
+      },
+      {
+        "author": "Daemon Targaryen",
+        "message": "Dragons are not a lazy creature."
+      },
+      {
+        "author": "Jon Snow",
+        "message": "Love is the death of duty."
+      },
+      {
+        "author": "Barristan Selmy",
+        "message": "Everybody dies sooner or later. Make your death mean something."
+      },
+      {
+        "author": "Cersei Lannister",
+        "message": "There is no justice in the world. Only power."
+      },
+      {
+        "author": "Euron Greyjoy",
+        "message": "Sometimes, the best way to get to the heart of a man is to take a knife to it."
+      },
+      {
+        "author": "Rhaenyra Targaryen",
+        "message": "You cannot stop the change any more than you can stop the suns from setting."
+      },
+      {
+        "author": "Arya Stark",
+        "message": "A girl has no name."
+      },
+      {
+        "author": "Daenerys Targaryen",
+        "message": "The only way to win is to do it together."
+      },
+      {
+        "author": "Tyrion Lannister",
+        "message": "Live by the sword, die by the sword."
+      },
+      {
+        "author": "Varys",
+        "message": "The truth is rarely pure and never simple."
+      },
+      {
+        "author": "Littlefinger",
+        "message": "A man with no motive is a man with no end."
+      },
+      {
+        "author": "Viserys Targaryen",
+        "message": "The past is a lesson. The future a battle."
+      },
+      {
+        "author": "Davos Seaworth",
+        "message": "Faith is not supposed to be a comfort. It’s supposed to be a challenge."
+      },
+      {
+        "author": "Brienne of Tarth",
+        "message": "Beneath the armor, there is a man. Respect the man."
+      },
+      {
+        "author": "Rhaegar Targaryen",
+        "message": "Only the mad survive."
+      },
+      {
+        "author": "Tyrion Lannister",
+        "message": "Minds are like swords; the more they are sharpened, the greater the power."
+      },
+      {
+        "author": "Hodor",
+        "message": "Hold the door!"
+      },
+      {
+        "author": "Robb Stark",
+        "message": "A good king knows when to listen."
+      },
+      {
+        "author": "Julius Caesar (quoted by Tyrion Lannister)",
+        "message": "Victory has a thousand fathers, but defeat is an orphan."
+      },
+      {
+        "author": "House Targaryen",
+        "message": "Dare to be different. Embrace your inner dragon."
+      },
+      {
+        "author": "House Greyjoy",
+        "message": "We do not sow."
+      },
+      {
+        "author": "Petyr Baelish",
+        "message": "A fight is not won by the strongest. It is won by the smartest."
+      },
+      {
+        "author": "Olenna Tyrell",
+        "message": "What matters is what you can prove."
+      },
+      {
+        "author": "Cersei Lannister",
+        "message": "Love is poison. A sweet poison, yes, but it will kill you all the same."
+      },
+      {
+        "author": "Jaime Lannister",
+        "message": "Sometimes you need to do the things you hate."
+      },
+      {
+        "author": "Yoda (not from the universe, but for inspiration)",
+        "message": "With great power comes great responsibility."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1357,
+      "prompt_tokens": 46,
+      "completion_tokens": 1311
+    },
     "modified": "2024-09-04T16:50:12.613394+00:00",
     "dbu": "postgres"
   },
@@ -71,13 +441,1112 @@
     "prompt": "by characters from the sopranos",
     "promptliteral": false,
     "model": "gpt-4o-mini",
-    "message": {
-      "genai": "Here’s a list of 50 \"Message of the Day\" quotes inspired by characters from *The Sopranos*, formatted as an array of JSON objects. Each object contains a `message` and `author` field.\n\n```json\n[\n    {\"message\": \"Sometimes it’s good to be a little afraid. Fear keeps you sharp.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"In this life, you gotta find your own way, and that means making your own luck.\", \"author\": \"Christopher Moltisanti\"},\n    {\"message\": \"You can't make a deal with the devil and think you won’t pay for it.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"The family’s all that matters; everything else is just noise.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Always stay two steps ahead; it’s a jungle out there.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"A man is defined by his choices. Choose wisely.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"Respect is earned, not handed out.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Life’s a series of risks. Assess, then act.\", \"author\": \"Anthony Appropriately\"},\n    {\"message\": \"Never underestimate the power of loyalty.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Sometimes the best solution is to not act at all. Patience pays off.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"There’s no value in regrets; only lessons learned.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Don’t let emotions cloud your judgment. Stay cool.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Trust is the currency of any relationship.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"If you can’t laugh at yourself, you’ll get taken for a ride.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Sometimes you just gotta roll with the punches.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Always look out for number one, but don’t forget those who helped you along the way.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"You can’t change the past, but you can shape your future.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Family is everything, but it's also a double-edged sword.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Everyone’s got a plan ‘til they get punched in the mouth.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Having the right connections can open doors.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"Never show weakness; it’s seen as an invitation.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Stay true to yourself; you can’t please everyone.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"In this game, loyalty comes with a price.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Sometimes the right thing to do is the hardest.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Always have a backup plan; life is unpredictable.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Not every battle is worth fighting; pick your wars.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"You can lose everything, but you can’t lose your pride.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"A wise guy knows the power of silence.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Don't count on tomorrow; seize today.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Your reputation is all you really have; protect it.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Face your demons head-on; the longer you wait, the worse they get.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Keep your friends close and your enemies closer.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"A good strategist knows when to hold back.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"Life is about choices; choose the path that brings you peace.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Never be afraid to ask for help; strength lies in community.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"The mind can be your greatest ally or worst enemy.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Every setback is an opportunity in disguise.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Surround yourself with good people, and you’ll go far.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Beware of false friends; they can cause the most harm.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"A true leader knows when to follow.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"Integrity is what you do when no one is watching.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Keep your enemies guessing; let them think they have the upper hand.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Every loan comes with interest; be mindful of what you owe.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"Remember, it’s not personal; it’s business.\", \"author\": \"Silvio Dante\"},\n    {\"message\": \"A good night's sleep can always bring clarity.\", \"author\": \"Dr. Melfi\"},\n    {\"message\": \"Believe in yourself; confidence is key.\", \"author\": \"Tony Soprano\"},\n    {\"message\": \"Always pay your debts; it earns you respect.\", \"author\": \"Paulie Gualtieri\"},\n    {\"message\": \"You’re never truly out of the game until you say you are.\", \"author\": \"Carmela Soprano\"},\n    {\"message\": \"Sometimes you gotta break a few eggs to make an omelet.\", \"author\": \"Chris Moltisanti\"},\n    {\"message\": \"A wise guy never forgets his roots; they keep you grounded.\", \"author\": \"Silvio Dante\"}\n]\n```\n\nFeel free to adjust any quotes to better match your needs or the themes you want to emphasize!"
-    },
+    "message": [
+      {
+        "author": "Tony Soprano",
+        "message": "Sometimes it's about the journey, not the destination."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "You've got to grab life by the horns."
+      },
+      {
+        "author": "Dr. Melfi",
+        "message": "Remember, you can't control the people around you, but you can control your reaction to them."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "Every decision has its consequences. Choose wisely."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Family is everything, but you have to take care of yourself first."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "Don't let anyone push you around. Stand your ground."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Sometimes you have to do what you have to do."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "It's not just business; it's personal."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "Don't be a fool. Know your worth."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Trust is a fragile thing. Handle it with care."
+      },
+      {
+        "author": "Dr. Melfi",
+        "message": "You can't let your emotions control you."
+      },
+      {
+        "author": "Corrado Soprano",
+        "message": "Sometimes you have to be the bad guy to win."
+      },
+      {
+        "author": "Meadow Soprano",
+        "message": "Life is about balance. Find yours."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Do what you believe is right."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "Loyalty is earned, not given."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "The past is the past; don't let it haunt you."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "You have to be a little ruthless to survive."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "Don't let anyone define you but yourself."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Success isn't given; it's taken."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "Hard work pays off, but remember to enjoy the fruits of your labor."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "Don't underestimate the power of a good plan."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "In this life, you have to make your own luck."
+      },
+      {
+        "author": "Michael Corleone",
+        "message": "Keep your friends close, but your enemies closer."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "You are the master of your own fate."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "Life's too short for regrets; make your choices count."
+      },
+      {
+        "author": "Dr. Melfi",
+        "message": "Emotions can be a weakness; don't let them control you."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Real strength comes from within."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "Never back down from a challenge."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "Sometimes a little fear can keep you sharp."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Be wary of those who seek to elevate themselves at your expense."
+      },
+      {
+        "author": "Corrado Soprano",
+        "message": "Honor is everything in our world."
+      },
+      {
+        "author": "Meadow Soprano",
+        "message": "Surround yourself with those who uplift you."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "Never forget where you came from, but don't let it hold you back."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "Take risks, but know when to pull back."
+      },
+      {
+        "author": "Dr. Melfi",
+        "message": "Your past shapes you, but it doesn’t have to define you."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Don't take life too seriously; it's not like you'll make it out alive."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "Trust takes years to build and seconds to break."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "Success requires hard work and a little luck."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "Life isn’t always fair; don’t let it stop you."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Courage isn't the absence of fear; it's confronting it."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "In the game of life, strategy is key."
+      },
+      {
+        "author": "Meadow Soprano",
+        "message": "Don't sacrifice your values for anyone."
+      },
+      {
+        "author": "Dr. Melfi",
+        "message": "Don't let your past dictate your future."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "When in doubt, always stick to loyalty."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "You can't always trust people, even if they wear your colors."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Seek respect, not attention; it lasts longer."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "Take pride in your work and your life."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "Life's about choices; make them wisely."
+      },
+      {
+        "author": "Carmela Soprano",
+        "message": "It's not about being the best; it's about being true to yourself."
+      },
+      {
+        "author": "Dr. Melfi",
+        "message": "Sometimes, you just need to let things go."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Control your own narrative; don’t let others write it for you."
+      },
+      {
+        "author": "Silvio Dante",
+        "message": "Life is too precious to live with regrets."
+      },
+      {
+        "author": "Meadow Soprano",
+        "message": "Find balance in your life; it's the key to happiness."
+      },
+      {
+        "author": "Paulie Walnuts",
+        "message": "Trust is a currency; spend it wisely."
+      },
+      {
+        "author": "Christopher Moltisanti",
+        "message": "In a world full of chaos, be your own anchor."
+      },
+      {
+        "author": "Tony Soprano",
+        "message": "Real strength shines when you least expect it."
+      }
+    ],
     "usage": {
-      "total_tokens": 1427,
+      "total_tokens": 1486,
       "prompt_tokens": 40,
-      "completion_tokens": 1387
+      "completion_tokens": 1446
+    },
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 4,
+    "topic": "elon",
+    "prompt": "related to Elon Musk",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": [
+      {
+        "author": "Elon Musk",
+        "message": "When something is important enough, you do it even if the odds are not in your favor."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Some people don't like change, but you need to embrace change if the alternative is disaster."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "I think it’s possible for ordinary people to choose to be extraordinary."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it's not."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "The first step is to establish that something is possible; then probability will occur."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Persistence is essential to success."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You should be too big to be able to fail."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "I could either watch it happen or be a part of it."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Great companies are built on great products."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "The important thing is to look at how we can work together to bring about positive change."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Life is too short for long-term grudges."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "It is possible for a person to choose to be extraordinary, and you should take that path."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "The rules of poker apply to life: You need to be willing to take risks."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "If something is important enough, even if the odds are against you, you should still do it."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "The future is about sustainable energy."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You have to be driven and be willing to push through problems."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Our rockets are the most advanced in the world."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You must constantly seek out the best opportunities to progress."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "To make progress, you have to be willing to fail."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Always think about how you could be doing things better."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "We're not just building cars; we're building platforms for the future."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Don’t confuse progress with a lower price."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You can’t be a successful company without being good at what you do."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "The key to success is to focus on goals, not obstacles."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "To be successful, you must have your heart in your business, and your business in your heart."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "A company is like a family; it embodies its values and mission."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "My motivation for doing anything is to be at the forefront of technology."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You can't just think a lot about things; you have to actually do them."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Every person in the world has the potential to be great."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "It's not about how good you are; it's about how bad you want it."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You get paid for the value you bring to the table."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Sometimes, if you want to succeed, you have to take a leap of faith."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "If you're not building the future, you're not doing anything."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Innovate or die."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Your time is limited, so don’t waste it living someone else’s life."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Being a founder is like being a parent; you have to deal with the ups and downs."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "You should always be looking to innovate and lead in your field."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Take risks now and do something bold."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "I think we need to be focusing on our ambitions, not our fears."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "The future will be better if we make it better."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "It's all about moving forward and making progress."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "If you want to change the world in some big way, you have to take risks."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "If something is important enough, you should be willing to take risks."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "We need bold goals to help create a great future."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Energy is the key to the future of humanity."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Do what you can, with what you have, where you are."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Focus on solving the problem, not being the problem."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "We should be doing everything we can to encourage innovative thinking."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Be the change you wish to see in the world."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Create a vision that makes you want to jump out of bed in the morning."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "If we can innovate every day, we'll create the best products for humanity."
+      },
+      {
+        "author": "Elon Musk",
+        "message": "Remember to have fun while you’re working on your goals."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1464,
+      "prompt_tokens": 37,
+      "completion_tokens": 1427
+    },
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 8,
+    "topic": "politics-mini",
+    "prompt": "related to American Politics from the past month",
+    "promptliteral": false,
+    "model": "gpt-4o-mini",
+    "message": [
+      {
+        "author": "Barbara Jordan",
+        "message": "Democracy is not a spectator sport."
+      },
+      {
+        "author": "Abraham Lincoln",
+        "message": "The best way to predict the future is to create it."
+      },
+      {
+        "author": "Theodore Roosevelt",
+        "message": "Nothing worth having comes easy."
+      },
+      {
+        "author": "Unknown",
+        "message": "Vote as if your life depends on it, because it does."
+      },
+      {
+        "author": "Martin Luther King Jr.",
+        "message": "Injustice anywhere is a threat to justice everywhere."
+      },
+      {
+        "author": "John F. Kennedy",
+        "message": "Change is the law of life. And those who look only to the past or present are certain to miss the future."
+      },
+      {
+        "author": "Unknown",
+        "message": "A government that is afraid to look after its own people is a government that is doomed to fail."
+      },
+      {
+        "author": "Unknown",
+        "message": "Politics is not about the people you elect; it's about the people who vote."
+      },
+      {
+        "author": "Audre Lorde",
+        "message": "Your silence will not protect you."
+      },
+      {
+        "author": "Amelia Earhart",
+        "message": "The most effective way to do it is to do it."
+      },
+      {
+        "author": "Thomas Jefferson",
+        "message": "When the people fear the government, there is tyranny. When the government fears the people, there is liberty."
+      },
+      {
+        "author": "Unknown",
+        "message": "We are stronger together than we could ever be alone."
+      },
+      {
+        "author": "Nelson Mandela",
+        "message": "Courage is not the absence of fear, but the triumph over it."
+      },
+      {
+        "author": "Unknown",
+        "message": "Access to the ballot is a fundamental right."
+      },
+      {
+        "author": "Martin Luther King Jr.",
+        "message": "Freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed."
+      },
+      {
+        "author": "Groucho Marx",
+        "message": "Politics is the art of looking for trouble, finding it everywhere, diagnosing it incorrectly, and applying the wrong remedies."
+      },
+      {
+        "author": "Thomas Jefferson",
+        "message": "An informed citizenry is at the heart of a dynamic democracy."
+      },
+      {
+        "author": "Martin Luther King Jr.",
+        "message": "The ultimate measure of a man is what he does with his power."
+      },
+      {
+        "author": "George W. Bush",
+        "message": "You have to take the initiative and play your game. In a decisive moment, you have to be bold."
+      },
+      {
+        "author": "Abraham Lincoln",
+        "message": "Elections belong to the people. It's their decision."
+      },
+      {
+        "author": "Sojourner Truth",
+        "message": "Truth is powerful and it prevails."
+      },
+      {
+        "author": "Unknown",
+        "message": "Together, we can build a better future."
+      },
+      {
+        "author": "Sheryl Sandberg",
+        "message": "Leadership is about making others better as a result of your presence."
+      },
+      {
+        "author": "Plato",
+        "message": "The price of apathy towards public affairs is to be ruled by evil men."
+      },
+      {
+        "author": "Unknown",
+        "message": "Each of us is called to become a voice for the voiceless."
+      },
+      {
+        "author": "Martin Luther King Jr.",
+        "message": "Our lives begin to end the day we become silent about things that matter."
+      },
+      {
+        "author": "Mahatma Gandhi",
+        "message": "The future depends on what you do today."
+      },
+      {
+        "author": "Mahatma Gandhi",
+        "message": "You must be the change you wish to see in the world."
+      },
+      {
+        "author": "Harold Laswell",
+        "message": "Politics is the science of who gets what, when, and how."
+      },
+      {
+        "author": "Cesar Chavez",
+        "message": "We cannot seek achievement for ourselves and forget about progress and prosperity for our community."
+      },
+      {
+        "author": "Abraham Lincoln",
+        "message": "Democracy is the government of the people, by the people, for the people."
+      },
+      {
+        "author": "William James",
+        "message": "Act as if what you do makes a difference. It does."
+      },
+      {
+        "author": "Franklin D. Roosevelt",
+        "message": "The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little."
+      },
+      {
+        "author": "Nelson Mandela",
+        "message": "To deny people their human rights is to challenge their very humanity."
+      },
+      {
+        "author": "Albert Einstein",
+        "message": "We cannot solve our problems with the same thinking we used when we created them."
+      },
+      {
+        "author": "Edmund Burke",
+        "message": "The only thing necessary for the triumph of evil is for good men to do nothing."
+      },
+      {
+        "author": "Unknown",
+        "message": "A vote is a powerful thing; it is the foundation of our democracy."
+      },
+      {
+        "author": "Unknown",
+        "message": "Democracy is not a one-time event, but a way of life."
+      },
+      {
+        "author": "Unknown",
+        "message": "Your vote is your voice; make sure it is heard."
+      },
+      {
+        "author": "Unknown",
+        "message": "Politics is about the lives we touch."
+      },
+      {
+        "author": "Unknown",
+        "message": "A democratic government should be accountable to its people."
+      },
+      {
+        "author": "Martin Luther King Jr.",
+        "message": "In the end, we will remember not the words of our enemies, but the silence of our friends."
+      },
+      {
+        "author": "Aesop",
+        "message": "United we stand, divided we fall."
+      },
+      {
+        "author": "Brené Brown",
+        "message": "Empathy fuels connection; disconnected we are lonely."
+      },
+      {
+        "author": "Peter Drucker",
+        "message": "The greatest danger in times of turbulence is not the turbulence; it is to act with yesterday's logic."
+      },
+      {
+        "author": "John C. Maxwell",
+        "message": "A leader is one who knows the way, goes the way, and shows the way."
+      },
+      {
+        "author": "Emily Dickinson",
+        "message": "Hope is the thing with feathers that perches in the soul."
+      },
+      {
+        "author": "Ralph Waldo Emerson",
+        "message": "What lies behind us and what lies before us are tiny matters compared to what lies within us."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1452,
+      "prompt_tokens": 41,
+      "completion_tokens": 1411
+    },
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 7,
+    "topic": "politics",
+    "prompt": "related to American Politics from the past month",
+    "promptliteral": false,
+    "model": "gpt-4o",
+    "message": [
+      {
+        "author": "Joe Biden",
+        "message": "The strength of our democracy lies in the participation of its citizens."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Every vote matters and every vote must be counted."
+      },
+      {
+        "author": "Barack Obama",
+        "message": "Democracy is not a spectator sport; it requires everyone's participation."
+      },
+      {
+        "author": "Nancy Pelosi",
+        "message": "We are fighting for the soul of our nation."
+      },
+      {
+        "author": "Alexandria Ocasio-Cortez",
+        "message": "Liberty and justice for all means all."
+      },
+      {
+        "author": "Bernie Sanders",
+        "message": "The future of our nation depends on how we treat each other every day."
+      },
+      {
+        "author": "Elizabeth Warren",
+        "message": "Economic justice is intertwined with social justice."
+      },
+      {
+        "author": "Gavin Newsom",
+        "message": "The climate crisis is an existential threat and we must act now."
+      },
+      {
+        "author": "Pramila Jayapal",
+        "message": "Healthcare should be a right, not a privilege."
+      },
+      {
+        "author": "Stacey Abrams",
+        "message": "We must restore the Voting Rights Act and ensure equal access to the ballot."
+      },
+      {
+        "author": "Chuck Schumer",
+        "message": "A strong middle class is essential for a strong country."
+      },
+      {
+        "author": "John Kasich",
+        "message": "Unity is the only path forward."
+      },
+      {
+        "author": "Martin Luther King III",
+        "message": "Injustice anywhere is a threat to justice everywhere."
+      },
+      {
+        "author": "Cory Booker",
+        "message": "We have the power to shape our own destiny."
+      },
+      {
+        "author": "Pete Buttigieg",
+        "message": "Transparency in government is crucial for democracy."
+      },
+      {
+        "author": "Tammy Duckworth",
+        "message": "Diverse voices make our democracy stronger."
+      },
+      {
+        "author": "Jay Inslee",
+        "message": "We must protect our environment for future generations."
+      },
+      {
+        "author": "Jill Biden",
+        "message": "Education is the foundation of a thriving democracy."
+      },
+      {
+        "author": "Andrew Yang",
+        "message": "Innovation and progress go hand in hand."
+      },
+      {
+        "author": "Ilhan Omar",
+        "message": "Human rights are non-negotiable."
+      },
+      {
+        "author": "Catherine Cortez Masto",
+        "message": "The American Dream is still alive and within reach for all."
+      },
+      {
+        "author": "Ayanna Pressley",
+        "message": "We must fight for fair, affordable housing for everyone."
+      },
+      {
+        "author": "Adam Schiff",
+        "message": "Defending democracy requires vigilance and action."
+      },
+      {
+        "author": "Julian Castro",
+        "message": "Compassion in policy makes our nation stronger."
+      },
+      {
+        "author": "Rochelle Walensky",
+        "message": "Health and science must guide our policy decisions."
+      },
+      {
+        "author": "Rosa DeLauro",
+        "message": "Equal pay for equal work is a matter of justice and fairness."
+      },
+      {
+        "author": "Raul Ruiz",
+        "message": "Let's build a country where every child has the opportunities they deserve."
+      },
+      {
+        "author": "Sherrod Brown",
+        "message": "A fair economy benefits everyone, not just the wealthy."
+      },
+      {
+        "author": "Tim Kaine",
+        "message": "America succeeds when we lift each other up."
+      },
+      {
+        "author": "Karen Bass",
+        "message": "Ending systemic racism must be a national priority."
+      },
+      {
+        "author": "Merrick Garland",
+        "message": "An informed citizenry is the backbone of democracy."
+      },
+      {
+        "author": "Pete Buttigieg",
+        "message": "Building infrastructure is an investment in our future."
+      },
+      {
+        "author": "Keisha Lance Bottoms",
+        "message": "Civic engagement starts at the local level."
+      },
+      {
+        "author": "Cory Booker",
+        "message": "Every person deserves to be treated with dignity and respect."
+      },
+      {
+        "author": "Rashida Tlaib",
+        "message": "Justice and equity should be at the heart of our policies."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "We must create policies that reflect our values of fairness and justice."
+      },
+      {
+        "author": "John Lewis",
+        "message": "The right to vote is sacred and must be protected."
+      },
+      {
+        "author": "Ed Markey",
+        "message": "Climate action is not just an option, it's a necessity."
+      },
+      {
+        "author": "Deb Haaland",
+        "message": "We must ensure that the American Dream is accessible for everyone."
+      },
+      {
+        "author": "Marcia Fudge",
+        "message": "Strong families build strong communities."
+      },
+      {
+        "author": "Joe Biden",
+        "message": "The essence of America is that everyone is equal in the eyes of the law."
+      },
+      {
+        "author": "Michelle Obama",
+        "message": "Public service is about serving all the people."
+      },
+      {
+        "author": "Gretchen Whitmer",
+        "message": "We rise together when we help our neighbors succeed."
+      },
+      {
+        "author": "Janet Yellen",
+        "message": "Empathy and ethics should guide our leadership."
+      },
+      {
+        "author": "Gina Raimondo",
+        "message": "Innovation in technology can drive our economy forward responsibly."
+      },
+      {
+        "author": "Hakeem Jeffries",
+        "message": "We need policies that reflect the diverse needs of our communities."
+      },
+      {
+        "author": "Elena Kagan",
+        "message": "Let's uphold justice and strive for a more perfect union."
+      },
+      {
+        "author": "Xavier Becerra",
+        "message": "We must foster a culture of respect and inclusion."
+      },
+      {
+        "author": "Ketanji Brown Jackson",
+        "message": "Protecting our democracy is a sacred duty."
+      },
+      {
+        "author": "Janet Yellen",
+        "message": "A strong economy works for everyone, not just the privileged few."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1566,
+      "prompt_tokens": 41,
+      "completion_tokens": 1525
+    },
+    "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 6,
+    "topic": "kamala",
+    "prompt": "related to Kamala Harris",
+    "promptliteral": false,
+    "model": "gpt-4o-mini-2024-07-18",
+    "message": [
+      {
+        "author": "Kamala Harris",
+        "message": "Dream with ambition, lead with conviction."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "You may be the first to do many things, but make sure you’re not the last."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Our unity is our strength."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "I will always fight for what is right."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Service is the rent we pay for living on this planet."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "When we lift each other up, we all rise."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "To tell the truth is to create change."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "We must stand firm in the face of injustice."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "There is power in our diversity."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Your voice is your power; use it."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Every problem is an opportunity to create solutions."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Empathy is the heart of leadership."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "We rise by lifting others."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Passion and purpose go hand in hand."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Courage is not the absence of fear, but the triumph over it."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "We are stronger together than we are alone."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Never underestimate your ability to make a difference."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Justice is what we're fighting for."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "History is made by those who dare to challenge the status quo."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "To be bold is to be brave."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Hope is not just a feeling; it’s an action."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Stand up for what you believe in, even if you stand alone."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Let us be the leaders we seek."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Our democracy demands participation."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "The future is ours to shape."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Stand firm in your beliefs and let your voice be heard."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Resilience is our greatest asset."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "A better future is possible when we come together."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Boldness is required to create change."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "A mother's love can change the world."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "The fight for justice is a lifelong endeavor."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Empowerment is contagious."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Inclusion is essential to democracy."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "We must be the change we wish to see."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Love and kindness are powerful tools."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Innovation requires courage to fail."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Our voices, when united, cannot be silenced."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Every child deserves a chance to dream."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "The road to progress is paved with determination."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Each of us has the power to create a brighter future."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Leadership is about serving others."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Young people inspire hope and change."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Together, we can break barriers."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Fight for what you believe in, and never back down."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Justice is the foundation of peace."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Failure is an opportunity for growth."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Words can inspire, and actions can change the world."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Know that your voice matters."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Let's work together for a better tomorrow."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "The time to act is now."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Empowerment breeds empowerment."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Today’s actions shape tomorrow’s realities."
+      },
+      {
+        "author": "Kamala Harris",
+        "message": "Be the change; the world needs you."
+      }
+    ],
+    "usage": {
+      "total_tokens": 1246,
+      "prompt_tokens": 38,
+      "completion_tokens": 1208
     },
     "modified": "2024-09-04T16:50:12.613394+00:00",
     "dbu": "postgres"
@@ -87,219 +1556,230 @@
     "topic": "trump",
     "prompt": "related to Donald Trump",
     "promptliteral": false,
-    "model": "gpt-4o-mini",
+    "model": "gpt-4o-mini-2024-07-18",
     "message": [
       {
         "author": "Donald Trump",
-        "message": "Sometimes by losing a battle you find a new way to win the war."
+        "message": "Make America great again!"
       },
       {
         "author": "Donald Trump",
-        "message": "I like thinking big. I always have. To me it’s very simple: If you’re going to be thinking anyway, you might as well think big."
+        "message": "We will build a great wall!"
       },
       {
         "author": "Donald Trump",
-        "message": "The better your case, the better your chance. You should always strive to be the best."
+        "message": "Fake news is the enemy of the people."
       },
       {
         "author": "Donald Trump",
-        "message": "What separates the winners from the losers is how a person reacts to each new twist of fate."
+        "message": "I will never back down."
       },
       {
         "author": "Donald Trump",
-        "message": "You have to think anyway, so why not think big?"
+        "message": "America first!"
       },
       {
         "author": "Donald Trump",
-        "message": "Without passion, you don’t have energy. Without energy, you have nothing."
+        "message": "We are winning so much, you will be amazed."
       },
       {
         "author": "Donald Trump",
-        "message": "Sometimes you have to take a leap of faith, and that’s how you grow."
+        "message": "Our country is doing so well!"
       },
       {
         "author": "Donald Trump",
-        "message": "If you can’t stand the heat, don’t start a fire."
+        "message": "I am your voice."
       },
       {
         "author": "Donald Trump",
-        "message": "I will build a great wall, and nobody builds walls better than me."
+        "message": "Together we will make America safe again!"
       },
       {
         "author": "Donald Trump",
-        "message": "You don’t have to be smart to be successful. You just have to be creative."
+        "message": "We need to drain the swamp."
       },
       {
         "author": "Donald Trump",
-        "message": "Success isn’t just about what you accomplish in your life; it’s about what you inspire others to do."
+        "message": "I will fight for you."
       },
       {
         "author": "Donald Trump",
-        "message": "Every day is a new opportunity to make a positive impact."
+        "message": "Success is about the mindset."
       },
       {
         "author": "Donald Trump",
-        "message": "Don’t be afraid to give up the good to go for the great."
+        "message": "Only I can fix it."
       },
       {
         "author": "Donald Trump",
-        "message": "Sometimes your best investments are the ones you don’t make."
+        "message": "The best is yet to come!"
       },
       {
         "author": "Donald Trump",
-        "message": "Leadership is not about the next election, it’s about the next generation."
+        "message": "I know more about trade than anybody."
       },
       {
         "author": "Donald Trump",
-        "message": "I was always told that you should never make decisions when you’re angry."
+        "message": "America will always be a great country!"
       },
       {
         "author": "Donald Trump",
-        "message": "An effective leader is one who can understand and manage emotions."
+        "message": "Job creation is my top priority."
       },
       {
         "author": "Donald Trump",
-        "message": "Winning is a lot more fun than losing."
+        "message": "We will not let our country disappear."
       },
       {
         "author": "Donald Trump",
-        "message": "You have to be able to take criticism and keep going forward."
+        "message": "Believe me, we are winning!"
       },
       {
         "author": "Donald Trump",
-        "message": "In the end, you’re judged by the people you surround yourself with."
+        "message": "Bigger, better, faster, stronger!"
       },
       {
         "author": "Donald Trump",
-        "message": "Tough times don’t last, but tough people do."
+        "message": "We are transforming the American economy."
       },
       {
         "author": "Donald Trump",
-        "message": "Great things in business are never done by one person; they’re done by a team."
+        "message": "Together, we are unstoppable!"
       },
       {
         "author": "Donald Trump",
-        "message": "Doubt is a killer. You just have to know who you are and what you stand for."
+        "message": "The American Dream is back!"
       },
       {
         "author": "Donald Trump",
-        "message": "Sometimes the worst things that happen to you, the way you respond to them, makes you who you are."
+        "message": "We are going to bring back jobs!"
       },
       {
         "author": "Donald Trump",
-        "message": "The most beautiful thing you can wear is confidence."
+        "message": "Our military will be the strongest."
       },
       {
         "author": "Donald Trump",
-        "message": "It's not whether you are right or wrong, but how much money you make when you're right and how much you lose when you're wrong."
+        "message": "We will not let the American worker down."
       },
       {
         "author": "Donald Trump",
-        "message": "Opportunities are usually disguised as hard work, so most people don’t recognize them."
+        "message": "Energy independence is essential."
       },
       {
         "author": "Donald Trump",
-        "message": "Focus on the future, not the past."
+        "message": "I will protect your Second Amendment rights."
       },
       {
         "author": "Donald Trump",
-        "message": "I will never give in. I will never back down."
+        "message": "Tax cuts will help the middle class."
       },
       {
         "author": "Donald Trump",
-        "message": "You have to be willing to take risks if you want to achieve great things."
+        "message": "Our country will be a beacon of hope."
       },
       {
         "author": "Donald Trump",
-        "message": "If people are not calling you crazy, you are not thinking big enough."
+        "message": "We will defend our borders."
       },
       {
         "author": "Donald Trump",
-        "message": "The more you give, the more you get."
+        "message": "The future belongs to the brave."
       },
       {
         "author": "Donald Trump",
-        "message": "Your time is limited, don’t waste it living someone else’s life."
+        "message": "We are one nation under God."
       },
       {
         "author": "Donald Trump",
-        "message": "You miss 100% of the shots you don’t take."
+        "message": "America is a land of opportunity."
       },
       {
         "author": "Donald Trump",
-        "message": "Be brave. Be bold. Make it happen."
+        "message": "Let's make our country great!"
       },
       {
         "author": "Donald Trump",
-        "message": "Every setback is a setup for a comeback."
+        "message": "Winning is a habit."
       },
       {
         "author": "Donald Trump",
-        "message": "There is no such thing as an easy job. You need to put in the work."
+        "message": "We will stand up for our rights!"
       },
       {
         "author": "Donald Trump",
-        "message": "Successful people ask better questions."
+        "message": "Incredible things are happening!"
       },
       {
         "author": "Donald Trump",
-        "message": "Always be looking for ways to improve yourself and your life."
+        "message": "I see great things ahead."
       },
       {
         "author": "Donald Trump",
-        "message": "Patience is not simply the ability to wait - it’s how we behave while we’re waiting."
+        "message": "We will make history together!"
       },
       {
         "author": "Donald Trump",
-        "message": "The key to success is to start before you are ready."
+        "message": "Our best days are yet to come!"
       },
       {
         "author": "Donald Trump",
-        "message": "Dream big and dare to fail."
+        "message": "I will fight for the forgotten man."
       },
       {
         "author": "Donald Trump",
-        "message": "If you don’t have a competitive advantage, don’t compete."
+        "message": "Unity is strength."
       },
       {
         "author": "Donald Trump",
-        "message": "Your greatest accomplishment is what you inspire others to do."
+        "message": "Every day is a new opportunity!"
       },
       {
         "author": "Donald Trump",
-        "message": "You can’t build a reputation on what you are going to do."
+        "message": "We are turning this ship around."
       },
       {
         "author": "Donald Trump",
-        "message": "Whatever you are, be a good one."
+        "message": "The American people deserve better."
       },
       {
         "author": "Donald Trump",
-        "message": "Success is how high you bounce when you hit bottom."
+        "message": "Hard work pays off."
       },
       {
         "author": "Donald Trump",
-        "message": "A leader takes people where they want to go. A great leader takes people where they don’t necessarily want to go, but ought to be."
+        "message": "We are creating a new wave of prosperity."
       },
       {
         "author": "Donald Trump",
-        "message": "If you don’t like it, change it. If you can’t change it, change your attitude."
+        "message": "I'm honored to serve you."
       },
       {
         "author": "Donald Trump",
-        "message": "You can’t let your failures define you. You have to let your failures teach you."
+        "message": "Courage and determination lead to success."
       },
       {
         "author": "Donald Trump",
-        "message": "It’s not about the cards you’re dealt, but how you play the hand."
+        "message": "Let’s create a brighter future together!"
       }
     ],
     "usage": {
-      "total_tokens": 1464,
+      "total_tokens": 1051,
       "prompt_tokens": 37,
-      "completion_tokens": 1427
+      "completion_tokens": 1014
     },
     "modified": "2024-09-04T16:50:12.613394+00:00",
+    "dbu": "postgres"
+  },
+  {
+    "id": 9,
+    "topic": "sports",
+    "prompt": "create a top ten list of the most famous quotes from the world of sports formatted as an array of json objects containing the fields message and author",
+    "promptliteral": true,
+    "model": "gpt-4o-mini",
+    "message": null,
+    "usage": null,
+    "modified": "2024-09-07T09:29:22.569338+00:00",
     "dbu": "postgres"
   }
 ]

@@ -1,0 +1,25 @@
+{
+   "id": "chatcmpl-A4mI0y4EfYbfqL2vRv2UIe73hr2UF",
+   "object": "chat.completion",
+   "created": 1725702300,
+   "model": "gpt-4o-mini-2024-07-18",
+   "choices": [
+      {
+         "index": 0,
+         "message": {
+            "role": "assistant",
+            "content": "Here's a top ten list of famous sports quotes formatted as an array of JSON objects:\n\n```json\n[\n    {\n        \"message\": \"Winning isn't everything; it's the only thing.\",\n        \"author\": \"Vince Lombardi\"\n    },\n    {\n        \"message\": \"The only way to prove you are a good sport is to lose.\",\n        \"author\": \"Ernie Banks\"\n    },\n    {\n        \"message\": \"I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I’ve succeeded.\",\n        \"author\": \"Michael Jordan\"\n    },\n    {\n        \"message\": \"It's not whether you get knocked down; it's whether you get up.\",\n        \"author\": \"Vince Lombardi\"\n    },\n    {\n        \"message\": \"You miss 100% of the shots you don’t take.\",\n        \"author\": \"Wayne Gretzky\"\n    },\n    {\n        \"message\": \"Champions keep playing until they get it right.\",\n        \"author\": \"Billie Jean King\"\n    },\n    {\n        \"message\": \"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.\",\n        \"author\": \"Pelé\"\n    },\n    {\n        \"message\": \"The more difficult the victory, the greater the happiness in winning.\",\n        \"author\": \"Pele\"\n    },\n    {\n        \"message\": \"What you lack in talent can be made up with desire, hustle, and giving 110% all the time.\",\n        \"author\": \"Don Zimmer\"\n    },\n    {\n        \"message\": \"Do you want to know who you are? Don’t ask. Act! Action will delineate and define you.\",\n        \"author\": \"Thomas Jefferson\"\n    }\n]\n```\n\nFeel free to adjust any quotes or authors as necessary!",
+            "refusal": null
+         },
+         "logprobs": null,
+         "finish_reason": "stop"
+      }
+   ],
+   "usage": {
+      "prompt_tokens": 35,
+      "completion_tokens": 425,
+      "total_tokens": 460
+   },
+   "system_fingerprint": "fp_483d39d857",
+   "cid": 9
+}

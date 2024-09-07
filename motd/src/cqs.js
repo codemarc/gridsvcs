@@ -103,7 +103,7 @@ export default class cqs {
       logger.info(`fetching new quotes using model ${model}`)
 
       const prompt = t2refresh.promptliteral
-         ? t2refresh.t2refresh.prompt
+         ? t2refresh.prompt
          : `create a list of 50 "message of the day" quotes ${t2refresh.prompt} formatted as an array of json objects containing the fields message and author`
 
       logger.info(`fetching new quotes using prompt ${prompt}`)
