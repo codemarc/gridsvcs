@@ -1,9 +1,10 @@
+import { createClient } from "@supabase/supabase-js"
 import fs from "fs-extra"
 import logger from "./logger.js";
 import path from "path"
+
 import packageJson from "../package.json" assert { type: "json" }
-const { name, version, description } = packageJson
-import { createClient } from "@supabase/supabase-js"
+const { version } = packageJson
 
 const DATA_DIR = path.join(process.cwd(), process.env.GS_DATA ?? "data")
 

@@ -1,5 +1,7 @@
 # gridsvcs
 
+Changes for version 0.0.7
+
 Changes for version 0.0.6
 - cli updates to manage refresh
 - added supabase support

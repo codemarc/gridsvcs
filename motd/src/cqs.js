@@ -106,7 +106,7 @@ export default class cqs {
          ? t2refresh.prompt
          : `create a list of 50 "message of the day" quotes ${t2refresh.prompt} formatted as an array of json objects containing the fields message and author`
 
-      logger.info(`fetching new quotes using prompt ${prompt}`)
+      logger.info(`using prompt ${prompt}`)
 
       const quotesFile = DATA_DIR + `/${topic}.quotes.json`
 

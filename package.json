@@ -5,6 +5,9 @@
    "private": true,
    "scripts": {
       "doc": "cd doc && yarn doc && cd ..",
-      "doc:deploy": "cd doc && yarn deploy && cd .."
+      "doc:deploy": "cd doc && yarn deploy && cd ..",
+      "profile": "cd profile && yarn start && cd ..",
+      "profile:dev": "cd profile && yarn dev && cd ..",
+      "profile:build": "cd profile && yarn build && cd .."
    }
 }
